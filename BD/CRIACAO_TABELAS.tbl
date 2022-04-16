@@ -1,0 +1,136 @@
+-- OBSERVAÇÃO: 
+-- 1º TODOS OS CAMPOS SERÃO ARMAZENADOS SEM MÁSCARA!!!
+-- OU SEJA CNPJ, CPF, TELEFONE NÃO DEVERAM TER CARACTERES ESPECIAIS, REALIZAR A MÁSCARA NO TRATAMENTO DOS DADOS 
+
+-- 2º AO ALTERAR/ADICIONAR QUALQUER TABELA É NECESSÁRIO REALIZAR O COMMIT E VERIFICAR SE NÃO IRÁ AFETAR A ESTRUTURA DAS TABELAS
+
+-- 3º MANTER NOME DE ATRIBUTO/TABELA SEMPRE EM MAIUSCULO, SEGUINDO O PADRÃO
+
+-- 4º REMOVER O COMENTÁRIO DA LINHA ABAIXO NA PRIMEIRA EXECUÇÃO
+--CREATE DATABASE FATEC_ID;
+
+use FATEC_ID;
+
+create table TB_CURSOS(
+  ID_CURSO int primary key auto_increment not null, 
+  NOME varchar(60) not null,
+  PERIODO char(1) not null, /* Sendo: M - Manhã | T - Tarde | N - Noite | E - EAD */
+  PPC MEDIUMTEXT not null,
+  EMAIL varchar(120) not null,
+  TIPO char(1) not null -- Sendo: G - Graduação | T - Técnico(NOVO TECH) | P - Pós Graduação
+);
+
+create table TB_ALUNOS(
+  RA varchar(15) not null,
+  CPF varchar(11) primary key not null, /*  CPF sem "." */
+  NOME varchar(80) not null,
+  EMAIL varchar(120) not null,
+  SENHA MEDIUMTEXT not null, /* senha criptografada md5 */
+  ID_ULTIMO_CURSO int not null,
+  foreign key (ID_ULTIMO_CURSO) references TB_CURSOS(ID_CURSO)
+);
+
+create table TB_CARGOS(
+  ID_CARGO int primary key auto_increment not null, 
+  PROFESSOR boolean, 
+  COORDENADOR boolean, 
+  BIBLIOTECARIA boolean, 
+  SEC_ACAD boolean, 
+  SEC_SERV boolean, 
+  DIRETOR boolean
+);
+
+create table TB_FUNCIONARIOS(
+  CPF varchar(11) primary key not null, /*  CPF sem "." */
+  NOME varchar(80) not null,
+  EMAIL varchar(120),
+  SENHA MEDIUMTEXT not null, /* senha criptografada md5 */
+  ID_CARGO int not null,
+  foreign key (ID_CARGO) references TB_CARGOS(ID_CARGO)
+);
+
+create table TB_EMPRESAS(
+  CNPJ varchar(14) primary key not null, /*  CNPJ sem "." */
+  NOME_EMPRESA varchar(80) not null,
+  EMAIL varchar(120),
+  SENHA MEDIUMTEXT not null, /* senha criptografada md5 */
+  NOME_CONTATO varchar(80),
+  TELEFONE_CONTATO varchar(14),
+  CARGO_CONTATO varchar(60)
+);
+
+create table TB_VAGAS(
+  ID_VAGA int primary key auto_increment not null, 
+  DESCRICAO varchar(80) not null,
+  REGIME char(1), /* C - CLT | E - Estágio | P - CNPJ */ 
+  DT_ABERTURA datetime not null,
+  DT_FECHAMENTO datetime,
+  OBSERVACOES varchar(2000),
+  CNPJ_EMPRESA varchar(14) not null,
+  foreign key (CNPJ_EMPRESA) references TB_EMPRESAS(CNPJ)
+);
+
+create table TB_DOCUMENTOS(
+  ID_DOCUMENTO int primary key auto_increment not null, 
+  DESCRICAO varchar(80) not null,
+  DT_UPLOAD datetime not null,
+  TIPO char(1) -- B - Banner | E - Editais | G - GRADE  
+);
+
+create table TB_SUPORTE(
+  ID_SUPORTE int primary key auto_increment not null, 
+  DESCRICAO varchar(80) not null,
+  STATUS varchar(120), /*  A - ABERTO | P - PENDENTE | F - FECHADO */
+  DT_ABERTURA datetime not null,
+  DT_FECHAMENTO datetime,
+  OBSERVACOES varchar(2000)
+);
+
+create table TB_OUVIDORIA(
+  ID_OUVIDORIA int primary key auto_increment not null, 
+  ASSUNTO varchar(80) not null,
+  DT_ABERTURA datetime not null,
+  OBSERVACOES varchar(2000),
+  EMAIL_CONTATO varchar(120) not null,
+  NOME_CONTATO varchar(80)
+);
+
+create table TB_INTERESSADOS(
+  ID_INTERESSADO int primary key auto_increment not null, 
+  CPF varchar(11) not null, /*  CPF sem "." */
+  NOME varchar(80) not null,
+  EMAIL varchar(120),
+  TELEFONE varchar(14),
+  RACA char(2), /*  BA - Branca | PR - Preta | PA - Parda | AM - Amarela | IN - Indigena */
+  ORIGEM_ESCOLAR char(3), 
+  ID_CURSO int not null,
+  foreign key (ID_CURSO) references TB_CURSOS(ID_CURSO)
+);
+-- ORIGEM_ESCOLAR:  IPU - Integralmente Publica | PPU - Parcialmente Pública | IPA - Integralmente Particular | BPA - Bolsista na Particular
+
+create table TB_EVENTOS(
+  ID_EVENTO int primary key auto_increment not null, 
+  DESCRICAO varchar(120) not null
+);
+
+create table TB_ESTAGIARIOS(
+  ID_ESTAGIARIO int primary key auto_increment not null, 
+  CPF varchar(11) not null,
+  DESCRICAO varchar(80) not null,
+  REGIME char(1), /* C - CLT | E - Estágio | P - CNPJ*/
+  DT_INICIO datetime not null,
+  DT_FINAL datetime,
+  OBSERVACOES varchar(2000),
+  VALIDADO boolean,
+  CNPJ_EMPRESA varchar(14) not null,
+  foreign key (CPF) references TB_ALUNOS(CPF),
+  foreign key (CNPJ_EMPRESA) references TB_EMPRESAS(CNPJ)
+);
+
+create table TB_PROFESSOR_CURSO(
+  ID_PROF_CURS int primary key auto_increment not null, 
+  ID_CURSO int not null,
+  CPF_PROFESSOR varchar(11) not null,
+  foreign key (CPF_PROFESSOR) references TB_FUNCIONARIOS(CPF),
+  foreign key (ID_CURSO) references TB_CURSOS(ID_CURSO)
+);
