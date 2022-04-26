@@ -1,0 +1,22 @@
+#navbar{
+    height: 10vh;
+    width: 100vw !important;
+    background-color: red !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#drop-itens{
+    background-color: red !important;
+
+}
+
+input{
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    outline: none;
+    padding: 5px;
+}
