@@ -1,0 +1,115 @@
+
+@media (max-width: 576px) {
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+    }
+ }
+
+@media (min-width: 576px) {
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+
+    }
+ }
+
+@media (min-width: 768px) { 
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+
+    }
+}
+
+@media (min-width: 992px) { 
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+
+    }
+ }
+
+@media (min-width: 1400px) {
+
+    .titulo-curso{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .titulo-curso h1{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .titulo-curso i {
+        font-size: 50px;
+    }
+    
+    .info-curso{
+        padding: 0 300px 0 300px;
+    }
+
+    .detalhes-curso{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .detalhes-curso h2{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+        
+    }
+
+    .detalhes-curso p{
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-top: 20px;
+
+    }
+
+    .detalhes-curso ul{
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-top: 20px;
+
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        text-align: center;
+        color: #000;
+        margin-bottom: 100px;
+        font-size: 1.5rem;
+    }
+ }
