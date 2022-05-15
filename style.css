@@ -1,24 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-* {
-    font-family: "Roboto";
+/***************geral****************/
 
-}
-
-
-
-img {
-    width: 90%;
-    margin-left: 5%;
-}
-
-
-.conteudo {
-    max-width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-
+*{
+    font-family: 'Roboto';
 }
 
 h1 {
@@ -26,22 +13,52 @@ h1 {
     text-align: center;
     margin-top: 2em;
     margin-bottom: 3em;
+    
+    
 
 }
 
 h2 {
+
     font-weight: bold;
     text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
 
 }
 
 h3 {
+
     font-weight: bold;
     text-align: center;
+    margin-top: 6em;
+    margin-bottom: 3em;
+
+
+}
+
+h4 {
+
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 1em;
+
+
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 1em;
 }
 
 p {
-    text-align: justify;
+
+text-align: justify;
+
+}
+a {
+    text-decoration: none;
 }
 
 button a {
@@ -69,4 +86,233 @@ button {
 
 button:hover {
     padding:1.5 ;
+}
+
+
+
+.conteudo {
+    text-align: justify;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+
+
+ul {
+    
+    list-style-type: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+/***************botoes****************/
+
+.btn-3 {
+
+    width: 80%;
+    margin-left: 10%;
+   
+   
+
+}
+
+.btn {
+    
+    margin-top: 2em;
+    margin-left: 8%;
+}
+
+.btn-prof {
+    margin-left: 36%;
+    margin-right: 35%;
+
+}
+
+.btn-institucional{
+
+    margin-top: 2em;
+    margin-left: 2%;
+    
+
+}
+
+.btn-pequeno {
+    
+    color: black;
+    padding-left: 6em;
+    padding-right: 6em;
+
+}
+.btn-medio {
+    font-size: 1em;
+    color: black;
+    padding-left: 3em;
+    padding-right: 3em;
+
+}
+
+.btn-grande {
+    color: black;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.btn-linha3 {
+    margin-left: 6%;
+}
+
+.btn-linha2 {
+    margin-left: 15%;
+
+}
+
+.btn-linha {
+    margin-left: 20%;
+
+}
+
+.btn-1 {
+
+    margin-left: 30%;
+
+}
+
+.btn-regimento {
+    color: black;
+    font-size: 1em;
+    margin-left: 35%;
+}
+
+.btn-info {
+    margin-left: 20%;
+}
+
+.btn-extra {
+    margin-left: 2em;
+}
+
+.btn-tg {
+    color: black;
+    margin-left: 20%;
+}
+
+.btn-estagio {
+   
+    margin-left: 25%;
+    
+}
+.btn-extrapad {
+ margin-left: 8em;
+    padding-left: 10em;
+    padding-right: 10em;
+
+}
+
+
+
+/***************biblioteca****************/
+
+.biblioteca {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: -10;
+}
+
+
+/***************institucional****************/
+
+.img-inst {
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+
+
+
+.border-destaque {
+    border-bottom: 4px solid rgb(154, 18, 18);
+    
+}
+
+/***************PDI****************/
+
+
+
+.video-pdi {
+    display: inline;
+    float: left;
+    padding: 2em;
+    margin-left: 2%;
+    border-radius: 3px;
+}
+
+/***************portaria****************/
+
+.pesquisar {
+    margin-bottom: 4em;
+    font-weight: bold;
+    
+}
+
+input {
+    height: 4em;
+}
+
+.div-pesquisar {
+    width: 70%;
+    margin-left: 10%;
+
+}
+
+.link-portaria {
+    font-weight: bold;
+
+}
+
+.ul-lista {
+    width: 80%;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.ul-lista li {
+    margin-bottom: 2em;
+}
+
+
+/***************congregacao****************/
+
+.atas {
+
+    margin-left: 40%;
+    margin-right: 40%;
+
+}
+
+/***************congregacao****************/ 
+.faq {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 6em;
+    margin-bottom: 1em;
+    
+}
+
+/***************tg-ptg****************/ 
+
+.bold {
+    font-weight: bold;
+}
+
+
+.video-tg {
+    margin-left: 20%;
 }
