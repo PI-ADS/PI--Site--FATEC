@@ -124,7 +124,7 @@ ul {
 .btn {
     
     margin-top: 2em;
-    margin-left: 8%;
+    margin-left: 4%;
 }
 
 .btn-prof {
@@ -149,7 +149,7 @@ ul {
 
 }
 .btn-medio {
-    font-size: 1em;
+    
     color: black;
     padding-left: 3em;
     padding-right: 3em;
@@ -222,6 +222,10 @@ ul {
     text-align: center;
     margin-bottom: 2em;
     margin-top: -10;
+}
+
+.btn-biblio {
+    margin-left: 8%;
 }
 
 
@@ -316,3 +320,5 @@ input {
 .video-tg {
     margin-left: 20%;
 }
+
+
