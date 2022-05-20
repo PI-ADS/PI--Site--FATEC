@@ -235,7 +235,8 @@
         border-radius: 20px;
         max-width: 50vw;
         margin: 10px 25vw 0 17vw;
-        z-index: 9;
+        z-index: 20;
+        position: relative;
     }
     /*.sidebar {
         position: fixed;
@@ -248,14 +249,22 @@
         margin: 0 13vw 0 13vw;
     }
 	.sidebar {
-        z-index: -1;
 		flex-basis: 0;
 		flex-grow: 1;
 		max-width: 100%;
-		position: fixed;
+		position: absolute;
 		width: 100%;
 		padding-right: 12px;
 		padding-left: 12px;
+	}
+
+    .sidebar2 {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%;
+		position: absolute;
+		width: 100%;
+		padding-left: 1250px;
 	}
 	
 	.info {
