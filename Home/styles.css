@@ -3,15 +3,20 @@
     #navbar{
         background-color: #8c0c0c !important;
     }
+    .fatec-logo{
+        display: none;
+    }
     #drop-itens{
         background-color: #8c0c0c !important;
     }
     input{
         border-radius: 10px;
     }
+    .alert h1, hr{
+        display: none;
+    }
     .footer{
         bottom: 0;
-        position: fixed;
         background-color: #8c0c0c !important;
         color: #fff;
         display: flex;
@@ -40,6 +45,10 @@
     #navbar{
         background-color: #8c0c0c !important;
     }
+    .fatec-logo{
+        display: none;
+    }
+
     #drop-itens{
         background-color: #8c0c0c !important;
     }
@@ -48,7 +57,6 @@
     }
     .footer{
         bottom: 0;
-        position: fixed;
         background-color: #8c0c0c !important;
         color: #fff;
         display: flex;
@@ -152,6 +160,14 @@
     #navbar{
         background-color: #8c0c0c !important;
     }
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
     #drop-itens{
         background-color: #8c0c0c !important;
     }
@@ -160,7 +176,6 @@
     }
     .footer{
         bottom: 0;
-        position: fixed;
         background-color: #8c0c0c !important;
         color: #fff;
         display: flex;
@@ -268,6 +283,14 @@
         align-items: center;
         justify-content: center;
     }
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
     
     #drop-itens{
         background-color: #8c0c0c !important;
@@ -402,6 +425,14 @@
         justify-content: center;
     }
     
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
     #drop-itens{
         background-color: #8c0c0c !important;
     
@@ -467,15 +498,13 @@
         margin-right: 5px;
     }
 
-
-
     .alert {
         margin: 100px 20vw;
         padding: 20px;
         background: rgb(251,133,133);
         background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
         color: white;
-        position: fixed;
+        position: absolute;
         z-index: 1;
         border-radius: 30px;
         

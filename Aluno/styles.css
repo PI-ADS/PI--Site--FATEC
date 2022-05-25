@@ -1,0 +1,530 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 480px) {
+    #navbar{
+        background-color: #8c0c0c !important;
+    }
+    .fatec-logo{
+        display: none;
+    }
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    }
+    input{
+        border-radius: 10px;
+    }
+    
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        width: 100vw !important;
+    }
+
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+
+    .cursoButton{
+        height: 20vh;
+        width: 100vw;
+        padding: 30px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        transition: all 0.5s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+    .cursoButton a{
+        text-decoration: none !important;
+        color: #fff;
+    }
+
+    .cursoButton a:hover{
+        color: #fff;
+    }
+    .cursoButton:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: #fff;
+    }
+
+
+    .footer{
+        bottom: 0;
+        background-color: #8c0c0c !important;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        margin-top: 200vh;
+    }
+
+    .footer a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 300px) and (max-width: 767.98px) { 
+    #navbar{
+        background-color: #8c0c0c !important;
+    }
+    .fatec-logo{
+        display: none;
+    }
+
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    }
+    input{
+        border-radius: 10px;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        width: 100vw !important;
+    }
+
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80vw;
+        margin-left: 10%;
+        flex: 1;
+    }
+
+
+    .cursoButton{
+        height: 16vh;
+        width: 40vw;
+        padding: 30px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        margin: 50px;
+        transition: all 0.5s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+    .cursoButton a{
+        text-decoration: none !important;
+        color: #fff;
+    }
+
+    .cursoButton a:hover{
+        color: #fff;
+    }
+    .cursoButton:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: #fff;
+    }
+
+
+    .footer{
+        bottom: 0;
+        background-color: #8c0c0c !important;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top:  200vh;
+
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+    .footer a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    } 
+      
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #navbar{
+        background-color: #8c0c0c !important;
+    }
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    }
+    input{
+        border-radius: 10px;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        width: 100vw !important;
+    }
+
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80vw;
+        margin-left: 10%;
+        flex: 1;
+    }
+
+
+    .cursoButton{
+        height: 16vh;
+        width: 40vw;
+        padding: 30px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        margin: 50px;
+        transition: all 0.5s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+    .cursoButton a{
+        text-decoration: none !important;
+        color: #fff;
+    }
+
+    .cursoButton a:hover{
+        color: #fff;
+    }
+    .cursoButton:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: #fff;
+    }
+
+
+    .footer{
+        background-color: #8c0c0c !important;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        margin-top:  200vh;
+    }
+
+    .footer a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+
+    }
+
+    
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #navbar{
+        height: 10vh;
+        width: 100vw !important;
+        background-color: #8c0c0c !important;
+        color: white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    
+    }
+    
+    input{
+        border-radius: 10px;
+        margin-left: 50px !important;
+        margin-top: 20px;
+        outline: none;
+        padding: 5px;
+    }
+
+
+    img{
+        margin-top: 50px;
+        height: 500px;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        max-height: 95vh;
+        width: 100vw !important;
+        background-image: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80vw;
+        margin-left: 10%;
+        flex: 1;
+    }
+
+
+    .cursoButton{
+        height: 16vh;
+        width: 20vw;
+        padding: 30px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        margin: 50px;
+        transition: all 0.5s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+    .cursoButton a{
+        text-decoration: none !important;
+        color: #fff;
+    }
+
+    .cursoButton a:hover{
+        color: #fff;
+    }
+    .cursoButton:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: #fff;
+    }
+
+
+
+    .footer{
+        width: 100vw;
+        height: 10vh;
+        background-color: #8c0c0c;
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+
+        bottom: 0;
+        color: #fff;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .footer a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #navbar{
+        height: 10vh;
+        width: 100vw !important;
+        background-color: #8c0c0c !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    
+    }
+    
+    input{
+        border-radius: 10px;
+        margin-left: 50px !important;
+        margin-top: 20px;
+        outline: none;
+        padding: 5px;
+    }
+
+    .dropdown-item:hover{
+        background-color: #ad2e2e  !important;
+    }
+
+    .nav-link:hover{
+        background-color: #ad2e2e  !important;
+        opacity: .6 !important;
+    }
+
+    img{
+        margin-top: 50px;
+        height: 500px;
+        z-index: -1;
+
+    }
+
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        max-height: 95vh;
+        width: 100vw !important;
+        background-image: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80vw;
+        margin-left: 10%;
+        flex: 1;
+    }
+
+
+    .cursoButton{
+        height: 16vh;
+        width: 20vw;
+        padding: 30px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        margin: 50px;
+        transition: all 0.5s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+    .cursoButton a{
+        text-decoration: none !important;
+        color: #fff;
+    }
+
+    .cursoButton a:hover{
+        color: #fff;
+    }
+    .cursoButton:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: #fff;
+    }
+
+
+
+    .footer{
+        width: 100vw;
+        height: 10vh;
+        background-color: #8c0c0c;
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+        position: fixed;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .footer div a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .footer div i{
+        margin-right: 5px;
+    }
+
+ }
