@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,29 +20,59 @@
         a participação de professores, alunos, funcionários e representantes da
         sociedade civil para identificar as potencialidades, fragilidades,
         oportunidades e ameaças que envolvem a Fatec Indaiatuba e propor ações
-        práticas de melhorias. O principal objetivo desse encontro é refletir
+        práticas de melhorias. <span id="more">O principal objetivo desse encontro é refletir
         sobre a melhor forma de atender as necessidades da população em termos
         de educação, buscando então estabelecer metas a curto e médio prazo para
         a instituição no que diz respeito à sua filosofia de trabalho, à missão
         a que se propõe, às diretrizes pedagógicas que orientam suas ações, à
         sua estrutura organizacional e às atividades acadêmicas que desenvolve
         e/ou que pretende desenvolver.
-      </p>
+      </p></span>
+      <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
+
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+
+<div class="container ">
 
       <h3>Consulte aqui outras Informacões</h3>
-<div class="btn-linha3">
+
+      <div class="row">
+<div class="col-sm">
       <button class="btn-medio">
         <a
           href="http://www.fatecid.com.br/site/wp-content/uploads/2021/06/PLANO-DE-GESTAO-TEMPLATE-2021_2025.pdf"
           >Plano Diretor (2021-2025)</a
         >
       </button>
+
+      </div>
+
+      <div class="col-sm">
       <button class="btn-pequeno">
         <a href="http://www.fatecid.com.br/site/index.php/pdi-2018-2019/"
           >PDI 2018-2019</a
         >
       </button>
-      <button class="btn-pequeno">
+</div>
+
+     <div class="col-sm">
+        <button class="btn-pequeno">
         <a href="http://www.fatecid.com.br/site/index.php/pdi/"
           >PDI 2016-2018</a
         >
@@ -48,13 +80,17 @@
 
     </div>
 
-    <div class="btn-linha2">
+    <div class="col-sm">
       <button class="btn-pequeno">
         <a
           href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/pdi/PDI%20TEMPLATE%202019-2023%20PRONTO.pdf"
           >Relatório Diretor</a
         >
       </button>
+
+      </div>
+
+      <div class="col-sm">  
       <button class="btn-grande">
         <a
           href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/pdi/Resultado%20das%20Metas%20do%20PDI%202018_2019.xlsx"
@@ -63,18 +99,26 @@
       </button>
 
     </div>
+
+    <div class="col-sm">
       <button class="btn-grande btn-1">
         <a href="http://www.fatecid.com.br/site/index.php/regulamento_cpa/"
           >CPA - Comissão Própria de Avaliacão</a
         >
       </button>
     </div>
+  </div>
+</div>
 
-    <div class="conteudo">
-      <h4>Conheca alguns vídeos sobre nossa instituicão</h4>
 
+    <div class="container">
+      <h4 class="h4">Conheca alguns vídeos sobre nossa instituicão</h4>
+
+
+      <div class="row">
+        <div class="col-lg">
       <iframe class="video-pdi"
-        width="350"
+        width="400"
         height="315"
         src="https://www.youtube.com/embed/o5Z40YjULcw"
         title="YouTube video player"
@@ -82,8 +126,11 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+    </div>
+
+    <div class="col-lg">
       <iframe class="video-pdi"
-        width="350"
+        width="400"
         height="315"
         src="https://www.youtube.com/embed/ED-idCGqubc"
         title="YouTube video player"
@@ -91,6 +138,9 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+    </div>
+    </div>
+
     </div>
   </body>
 </html>

@@ -8,11 +8,19 @@
     font-family: 'Roboto';
 }
 
+.h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
 h1 {
     font-weight: bold;
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     
     
 
@@ -31,8 +39,8 @@ h3 {
 
     font-weight: bold;
     text-align: center;
-    margin-top: 6em;
-    margin-bottom: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
 
 }
@@ -41,15 +49,28 @@ h4 {
 
     font-weight: bold;
     text-align: center;
-    margin-top: 6em;
+    margin-top: 3em;
     margin-bottom: 1em;
 
+
+}
+
+.h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
 
 }
 
 h5 {
     font-weight: bold;
     font-size: 1em;
+
+}
+
+h6 {
+    text-align: center;
 }
 
 p {
@@ -78,9 +99,10 @@ a:visited{
 button {
     padding: 1em;
     background-color: lightgrey;
-    color: white;
+    color: BLACK;
     border-radius: 10px;
     border-style: none;
+    font-size: 0.5em;
      
 }
 
@@ -93,8 +115,8 @@ button:hover {
 .conteudo {
     text-align: justify;
     max-width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 17%;
+    margin-right: 10%;
 
 }
 
@@ -111,6 +133,7 @@ ul {
 
 
 /***************botoes****************/
+
 
 .btn-3 {
 
@@ -177,6 +200,11 @@ ul {
 
 }
 
+.btn-linha2{
+    margin-left: 30%;
+
+}
+
 .btn-1 {
 
     margin-left: 30%;
@@ -198,8 +226,12 @@ ul {
 }
 
 .btn-tg {
+    margin-left: 5%;
+    font-size: 0.8em;
     color: black;
-    margin-left: 20%;
+    
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .btn-estagio {
@@ -210,8 +242,25 @@ ul {
 .btn-extrapad {
  margin-left: 8em;
     padding-left: 10em;
-    padding-right: 10em;PI--Site--FATEC
+    padding-right: 10em;
 
+}
+
+.lermais {
+    
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 45%;
+    margin-right: 45%;
+    background: brown;
+    
+}
+
+.btn-padding {
+    padding-left:2em ;
+    padding-right: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 
@@ -227,6 +276,12 @@ ul {
 .btn-biblio {
     margin-left: 8%;
 }
+
+
+/*************LER MAIS****************/
+
+#more {display: none;}
+
 
 
 /***************institucional****************/
@@ -305,7 +360,7 @@ input {
 .faq {
     font-size: 1em;
     font-weight: bold;
-    margin-top: 6em;
+    margin-top: 3em;
     margin-bottom: 1em;
     
 }
@@ -321,4 +376,34 @@ input {
     margin-left: 20%;
 }
 
+
+/*TESTE*/
+
+
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.animals{
+  display: list-item;    
+ } 
 
