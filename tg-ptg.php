@@ -21,7 +21,7 @@
         O objetivo deste documento é estabelecer normas para a apresentação
         escrita dos Projetos de Trabalho de Graduação (PTG) e dos Trabalhos de
         Graduação (TG) dos Cursos Superiores de Tecnologia da Faculdade de
-        Tecnologia de Indaiatuba. Esses trabalhos devem seguir as normas
+        Tecnologia de Indaiatuba. <span id="more"> Esses trabalhos devem seguir as normas
         estabelecidas pela instituição, que estão de acordo com a ABNT 2002
         (Associação Brasileira de Normas Técnicas). A ABNT é o Fórum Nacional de
         Normalização, representante da ISO (International Organization for
@@ -32,8 +32,11 @@
         apresentação de trabalhos acadêmicos, como a NBR 6023 – Elaboração de
         Referências Bibliográficas; NBR 6024 – Numeração progressiva das seções;
         a NBR 6027 – Sumário; a NBR 6028 – Resumo; e a NBR 10520 – Apresentação
-        de citações em documentos./p>
-      </p>
+        de citações em documentos.
+      </p></span>
+      <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
+
+
 
       <p>Manual de Normas - 
       <a class="link-portaria"
@@ -49,6 +52,7 @@
 
       <p>O e-mail do CD deve conter as seguintes informações:</p>
       <p>Assunto: Nome e R.A. (Ex. Marina Telles / 10534859483748983)</p>
+      <span id="more">
 
       <p>Corpo do E-mail:</p>
       <p>1) Curso</p>
@@ -73,6 +77,13 @@
         tg@fatecindaiatuba.edu.br
       </p>
     </div>
+  </span> 
+  <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
+
+
+
+
+
 
     <div class="conteudo">
       <h3>LINKS PARA PESQUISA</h3>
@@ -87,6 +98,7 @@
         normas que estão em vigor e aquelas que foram canceladas ou
         substituídas.
       </p>
+      <span id="more">
 
       <br>
 
@@ -169,6 +181,10 @@
         sobre diversas áreas do conhecimento.
       </p>
 
+
+
+    </span> 
+    <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
       <br>
 
       <h3>ACERVOS DIGITAIS</h3>
@@ -182,6 +198,7 @@
         ><br />Acervo com mais de 300 edições da revista, desde 1987. Disponível
         gratuitamente.
       </p>
+      <span id="more">
 <br>
       <p><p class="bold">
         Phorte Educacional»&nbsp; </p><a
@@ -195,6 +212,8 @@
         que a tornam indispensável a qualquer estudante ou profissional.
       </p>
     </div>
+
+    <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
 
     <div class="conteudo">
       <h3>MODELOS E DOCUMENTOS</h3>
