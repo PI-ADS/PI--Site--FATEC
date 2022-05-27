@@ -1,0 +1,577 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 480px) {
+    #navbar{
+        background-color: #8c0c0c !important;
+    }
+    .fatec-logo{
+        display: none;
+    }
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    }
+    input{
+        border-radius: 10px;
+    }
+    .alert h1, hr{
+        display: none;
+    }
+    .footer{
+        bottom: 0;
+        background-color: #8c0c0c !important;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .footer a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 300px) and (max-width: 767.98px) { 
+    #navbar{
+        background-color: #8c0c0c !important;
+    }
+    .fatec-logo{
+        display: none;
+    }
+
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    }
+    input{
+        border-radius: 10px;
+    }
+    .footer{
+        bottom: 0;
+        background-color: #8c0c0c !important;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+    .footer a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .alert {
+        margin: 100px 20vw;
+        padding: 20px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        color: white;
+        position: absolute;
+        z-index: 1;
+        border-radius: 30px;
+        
+
+      }
+
+      
+      .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+      }
+
+
+      .alert hr{
+          border: 2px solid gray;
+          width: 100%;
+      }
+
+      .sp-close{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .closebtn {
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 30px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .closebtn:hover {
+        color: red;
+        opacity: .9;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+      }
+
+
+      .text-and-link{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30px;
+      }
+
+      .text-and-link button{
+          background-color: lightcoral;
+          color: #fff;
+          height: 50px;
+          border: none;
+          border-radius: 12px;
+          width: 200px;
+          font-size: 23px;
+          font-weight: 700;
+          margin-top: 10px;
+          cursor: pointer;
+      }
+
+      .text-and-link button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #navbar{
+        background-color: #8c0c0c !important;
+    }
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    }
+    input{
+        border-radius: 10px;
+    }
+    .footer{
+        bottom: 0;
+        background-color: #8c0c0c !important;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+    .footer a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+
+    }
+
+    .alert {
+        margin: 100px 20vw;
+        padding: 20px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        color: white;
+        position: absolute;
+        z-index: 1;
+        border-radius: 30px;
+        
+
+      }
+
+      
+      .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+      }
+
+
+      .alert hr{
+          border: 2px solid gray;
+          width: 100%;
+      }
+
+      .sp-close{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .closebtn {
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 30px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .closebtn:hover {
+        color: red;
+        opacity: .9;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+      }
+
+
+      .text-and-link{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 30px;
+      }
+
+      .text-and-link button{
+          background-color: lightcoral;
+          color: #fff;
+          height: 50px;
+          border: none;
+          border-radius: 12px;
+          width: 200px;
+          font-size: 23px;
+          font-weight: 700;
+          margin-top: 10px;
+          cursor: pointer;
+      }
+
+      .text-and-link button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #navbar{
+        height: 10vh;
+        width: 100vw !important;
+        background-color: #8c0c0c !important;
+        color: white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    
+    }
+    
+    input{
+        border-radius: 10px;
+        margin-left: 50px !important;
+        margin-top: 20px;
+        outline: none;
+        padding: 5px;
+    }
+
+
+    img{
+        margin-top: 50px;
+        height: 500px;
+    }
+
+
+
+
+    .footer{
+        width: 100vw;
+        height: 10vh;
+        background-color: #8c0c0c;
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+
+        bottom: 0;
+        color: #fff;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .footer a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .alert {
+        margin: 100px 20vw;
+        padding: 20px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        color: white;
+        position: absolute;
+        z-index: 1;
+        border-radius: 30px;
+        
+
+      }
+
+      
+      .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+      }
+
+
+      .alert hr{
+          border: 2px solid gray;
+          width: 100%;
+      }
+
+      .sp-close{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .closebtn {
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 30px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .closebtn:hover {
+        color: red;
+        opacity: .9;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+      }
+
+
+      .text-and-link{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 30px;
+      }
+
+      .text-and-link button{
+          background-color: lightcoral;
+          color: #fff;
+          height: 50px;
+          border: none;
+          border-radius: 12px;
+          width: 200px;
+          font-size: 23px;
+          font-weight: 700;
+          margin-top: 10px;
+          cursor: pointer;
+      }
+
+      .text-and-link button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #navbar{
+        height: 10vh;
+        width: 100vw !important;
+        background-color: #8c0c0c !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    #drop-itens{
+        background-color: #8c0c0c !important;
+    
+    }
+    
+    input{
+        border-radius: 10px;
+        margin-left: 50px !important;
+        margin-top: 20px;
+        outline: none;
+        padding: 5px;
+    }
+
+    .dropdown-item:hover{
+        background-color: #ad2e2e  !important;
+    }
+
+    .nav-link:hover{
+        background-color: #ad2e2e  !important;
+        opacity: .6 !important;
+    }
+
+
+
+    img{
+        margin-top: 50px;
+        height: 500px;
+        z-index: -1;
+
+    }
+
+
+
+
+
+
+
+
+    .footer{
+        width: 100vw;
+        height: 10vh;
+        background-color: #8c0c0c;
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+        position: fixed;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .footer div a{
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .footer div i{
+        margin-right: 5px;
+    }
+
+    .alert {
+        margin: 100px 20vw;
+        padding: 20px;
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        color: white;
+        position: absolute;
+        z-index: 1;
+        border-radius: 30px;
+        
+
+      }
+
+      
+      .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+      }
+
+
+      .alert hr{
+          border: 2px solid gray;
+          width: 100%;
+      }
+
+      .sp-close{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .closebtn {
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 30px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .closebtn:hover {
+        color: red;
+        opacity: .9;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+      }
+
+
+      .text-and-link{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 30px;
+      }
+
+      .text-and-link button{
+          background-color: lightcoral;
+          color: #fff;
+          height: 50px;
+          border: none;
+          border-radius: 12px;
+          width: 200px;
+          font-size: 23px;
+          font-weight: 700;
+          margin-top: 10px;
+          cursor: pointer;
+      }
+
+      .text-and-link button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+ }
