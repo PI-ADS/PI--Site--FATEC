@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,6 +59,8 @@
             >
           </button>
         </li>
+
+        <span id="more">
         <br />
         <li>
           <button>
@@ -67,6 +70,7 @@
             >
           </button>
         </li>
+      
         <br />
         <li>
           <button>
@@ -77,6 +81,10 @@
           </button>
         </li>
         <br />
+
+        
+
+       
         <li>
           <button>
             <a
@@ -147,8 +155,35 @@
               >2010</a
             >
           </button>
-        </li>
+          </li>
       </ul>
     </div>
+          </span>
+
+          <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
+
+       
+       
+
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+
+
+   
   </body>
 </html>
