@@ -1,14 +1,19 @@
 <?php 
 
 # Substitua abaixo os dados, de acordo com o banco criado
-$user = "id18790275_admfatec"; 
+$user = "admin"; 
 $password = "AdminWeb_359"; 
-$database = "id18790275_fatec_id"; 
 
 # O hostname deve ser sempre localhost 
-$hostname = "ns02.000webhost.com"; 
+$hostname = "sitefatec.c1rngiken4f2.us-east-1.rds.amazonaws.com"; 
+//definindo a conexão
+$conn = mysqli_connect($hostname, $user, $password);
 
-# Conecta com o servidor de banco de dados 
-mysqli_connect( $hostname, $user, $password ) or die( ' Erro na conexão ' ); 
-
+//verificando a conexão
+if($conn===false){
+	die("ERROR: Não foi possivel conectar. " . mysqli_connect_error());
+}
+// else {
+//   echo "Conectado com sucesso!";
+// }
 ?>
