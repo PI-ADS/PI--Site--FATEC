@@ -13,7 +13,4 @@ $conn = mysqli_connect($hostname, $user, $password);
 if($conn===false){
 	die("ERROR: Não foi possivel conectar. " . mysqli_connect_error());
 }
-// else {
-//   echo "Conectado com sucesso!";
-// }
 ?>

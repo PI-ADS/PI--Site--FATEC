@@ -1,3 +1,5 @@
+<?php include "../conexao.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,33 +15,36 @@
   <div class="container">
 
    <div class="row">
-  <form class="col">
+  <form class="col" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
     <div class="form-group">
       <label for="exampleFormControlInput1">Nome Completo</label>
-      <input class="form-control" type="text" >
+      <input nome="name" id="name" class="form-control" type="text" >
     </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Email</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
     </div>
     <div class="form-group">
       <label for="exampleFormControlSelect1">Setor</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>Direcão</option>
-        <option>Coordenacão</option>
-        <option>Diretoria de Servicos</option>
-        <option>Secretaria Academica</option>
-        <option>Biblioteca</option>
-        <option>Novotec</option>
+      <select class="form-control" name="destino" id="destino">
+        <option selected="selected" disabled="disabled">Selecione o Cargo</option>
+          <?php
+            $result = "SELECT * FROM fatecid.TB_SETOR";
+            $setores = mysqli_query($conn, $result);
+            while($row_setores = mysqli_fetch_assoc($setores)){ ?>
+            <option value="<?php echo $row_setores['EMAIL']; ?>"><?php echo $row_setores['NOME'];?>
+            </option>	
+            <?php }
+          ?>
       </select>
     </div>
 
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Mensagem</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <label for="lblmessage">Mensagem</label>
+      <textarea class="form-control" id="message" name="message" rows="3"></textarea>
     </div>
 
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" name="enviar" class="btn btn-primary">Enviar</button>
   </form>
 
   <div class="map col">
@@ -49,5 +54,26 @@
 
 </div> 
 </div>
+<?php
+//Criando Variaveis//
+  if(isset($_POST['enviar'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $destino = $_POST['destino'];
+    $mensagem .= "<p>O usuário: ".$name.", enviou uma mensagem. <br>";
+    $mensagem .= "Mensagem: ".$message."</p>";
+    
+    $headers = "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+    
+    //Definir o servidor de e-mail
+    // ini_set('SMTP', 'h16.servidorhh.com');
+	  // ini_set('smtp_port', '465');
+	  // ini_set($destino);
+    mail($email, "Email de fale conosco", $mensagem, $headers);
+  }
+?>
 </body>
 </html>
+

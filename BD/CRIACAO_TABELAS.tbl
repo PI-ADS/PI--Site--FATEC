@@ -132,3 +132,9 @@ create table TB_PROFESSOR_CURSO(
   foreign key (CPF_PROFESSOR) references TB_FUNCIONARIOS(CPF),
   foreign key (ID_CURSO) references TB_CURSOS(ID_CURSO)
 );
+
+create table TB_SETOR(
+  ID_SETOR int primary key auto_increment not null, 
+  NOME varchar(80) not null,
+  EMAIL varchar(80) not null
+);
