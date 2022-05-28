@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link text-white" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -73,19 +73,7 @@
                     <a class="dropdown-item text-white" href="">Concurso público para auxiliar docente</a>
                 </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Setores
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Biblioteca</a>
-                <a class="dropdown-item" href="pages/centalTI.php">Central de TI</a>
-                <a class="dropdown-item" href="#">Congregação (ATAS)</a>
-                <a class="dropdown-item" href="#">Estágio Supervisionado</a>
-                <a class="dropdown-item" href="#">Secretaria Acadêmica</a>
-              </div>
-            </li>
+           
             <li class="nav-item">
                 <input id="myInput" type="text" placeholder="Pesquisar...">
             </li>
@@ -94,4 +82,6 @@
       </nav>
     </div>
 
+</body>
 
+</html>
