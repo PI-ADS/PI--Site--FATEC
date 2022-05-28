@@ -1,22 +1,18 @@
 <!-- @format -->
+<?php
+  session_start(); 
+  include("../config/banco.php");
+  if(isset($_SESSION["login"]) == 1){   
+    include("../headerloged.php");
+  }else{  
+    include("../header.php");
+  }
+?>
+ <link rel="stylesheet" href="style.css">
+   
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Biblioteca</title>
-  </head>
-  <body>
-
-
-<header> 
- 
-
-
-</header>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <div class="conteudo">
       <h1>BIBLIOTECA</h1>
@@ -79,8 +75,8 @@
     </div>
     </div>
 
-    <footer>
+<!-- INICIO FOOTER -->
 
-
-  </body>
-</html>
+<?php
+  include("../footer.php");
+?>

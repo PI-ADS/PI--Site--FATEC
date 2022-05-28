@@ -1,27 +1,20 @@
-<!doctype html>
-<html lang="en">
+<!-- @format -->
+<?php
+  session_start(); 
+  include("../config/banco.php");
+  if(isset($_SESSION["login"]) == 1){   
+    include("../headerloged.php");
+  }else{  
+    include("../header.php");
+  }
+?>
+ <link rel="stylesheet" href="style.css">
+   
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS-->
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css.map">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.min.css.map">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.css">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.css.map">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.min.css.map">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css.map">
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css.map">
-  <link rel="stylesheet" type="text/css" href="../scss/custom.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-</head>
-<body>
+<div class="conteudo">
   <h1>Central de TI</h1>
   <div id="container">
   <div class="col-md-12"></div>
@@ -67,5 +60,4 @@
         </div>
     </div>
   </div>
-</body>
-</html>
+</div>

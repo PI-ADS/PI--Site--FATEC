@@ -83,10 +83,10 @@
 					<div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Setores</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Biblioteca</a>
-                            <a class="dropdown-item" href="#">Central de Informações</a>
-                            <a class="dropdown-item" href="#">Congregação (ATAS)</a>
-                            <a class="dropdown-item" href="#">Estágio Supervisionado</a>
+                            <a class="dropdown-item" href="pages\biblioteca.php">Biblioteca</a>
+                            <a class="dropdown-item" href="pages\centralTI.php">Central de TI</a>
+                            <a class="dropdown-item" href="pages\congregacao.php">Congregação (ATAS)</a>
+                            <a class="dropdown-item" href="pages\estagio.php">Estágio Supervisionado</a>
                             <a class="dropdown-item" href="#">Secretaria Acadêmica</a>
                         </div>
                     </div>
@@ -106,18 +106,20 @@
                            <a class="dropdown-item" href="#">email@fatec</a>
                            <a class="dropdown-item" href="#">Manual Veyon</a>
                            <a class="dropdown-item" href="#">Núcleos de Pesquisa</a>
-                           <a class="dropdown-item" href="#">Programa de Monitoria de Disciplina e Iniciação Científica</a>
+                           <a class="dropdown-item" href="pages\monitoria.php">Programa de Monitoria de Disciplina e Iniciação Científica</a>
                            <a class="dropdown-item" href="#">Redefinição de Senha | E-mail Institucional</a>
                            <a class="dropdown-item" href="#">Trabalho de Graduação</a>
-                           <a class="dropdown-item" href="#">Vagas</a>
+                           <a class="dropdown-item" href="#">Trabalho de Graduação</a>
+                           <a class="dropdown-item" href="pages\cadastro-vaga.php">Vagas</a>
                            <a class="dropdown-item" href="#">WebSai</a>
+                           <a class="dropdown-item" href="pages\faq.php">FAQ</a>
                         </div>
                     </div>
 					<div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Institucional</a>
                         <div class="dropdown-menu">
-                           <a class="dropdown-item" href="#">Admistração</a>
-                           <a class="dropdown-item" href="#">Corpo Docente</a>
+                           <a class="dropdown-item" href="pages\institucional.php">Admistração</a>
+                           <a class="dropdown-item" href="pages/corpo-docente.php">Corpo Docente</a>
                            <a class="dropdown-item" href="manual_centro_paula_souza_gestao2019_atualizado.pdf">Manual de Identida Visual</a>
                            <a class="dropdown-item" href="#">Missão, Visão e Objetivo</a>
                            <a class="dropdown-item" href="#">PDI</a>
@@ -126,6 +128,7 @@
                            <a class="dropdown-item" href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/secretaria/regimento-fatecs%202016.pdf">Regimento</a>
                            <a class="dropdown-item" href="#">WEBSAI</a>
                            <a class="dropdown-item" href="#">Guias de Comunicação Inclusiva</a>
+                           <a class="dropdown-item" href="pages\ouvidoria.php">Ouvidoria</a>
                         </div>
                     </div>
                     <!--<a href="#" class="nav-item nav-link disabled" tabindex="-1">Area do Aluno</a> -->

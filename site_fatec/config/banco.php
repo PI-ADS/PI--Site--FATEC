@@ -1,15 +1,16 @@
-﻿<?php
+﻿<?php 
 
-$local = "localhost";
+# Substitua abaixo os dados, de acordo com o banco criado
+$user = "admin"; 
+$password = "AdminWeb_359"; 
 
-$usuario = "root";
+# O hostname deve ser sempre localhost 
+$hostname = "sitefatec.c1rngiken4f2.us-east-1.rds.amazonaws.com"; 
+//definindo a conexão
+$conn = mysqli_connect($hostname, $user, $password);
 
-$senha = "";
-
-$banco = "fatecid";
-
-$conexao = mysqli_connect( $local, $usuario, $senha, $banco);
-
-//$base = mysqli_select_db($banco,$conexao);
-
+//verificando a conexão
+if($conn===false){
+	die("ERROR: Não foi possivel conectar. " . mysqli_connect_error());
+}
 ?>
