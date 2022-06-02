@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+
 /***************geral****************/
 
 *{
@@ -79,6 +80,7 @@ text-align: justify;
 
 }
 a {
+    font-size: 1em;
     text-decoration: none;
 }
 
@@ -113,13 +115,19 @@ button:hover {
 
 
 .conteudo {
-    text-align: justify;
+    
+    
     max-width: 70%;
-    margin-left: 17%;
+    margin-left: 15%;
     margin-right: 10%;
 
 }
 
+.conteudo2 {
+    max-width: 70%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
 
 
 ul {
@@ -131,136 +139,41 @@ ul {
     font-style: italic;
 }
 
+.tit-prof {
+    display: inline;
+    width: 15%;
+}
+
 
 /***************botoes****************/
 
+.btn-div {
 
-.btn-3 {
-
-    width: 80%;
-    margin-left: 10%;
-   
-   
-
-}
-
-.btn {
-    
-    margin-top: 2em;
-    margin-left: 4%;
-}
-
-.btn-prof {
-    margin-left: 36%;
-    margin-right: 35%;
-
-}
-
-.btn-institucional{
-
-    margin-top: 2em;
-    margin-left: 2%;
-    
-
-}
-
-.btn-pequeno {
-    
-    color: black;
-    padding-left: 6em;
-    padding-right: 6em;
-
-}
-.btn-medio {
-    
-    color: black;
-    padding-left: 3em;
-    padding-right: 3em;
-
-}
-
-.btn-grande {
-    color: black;
-    padding-left: 2em;
-    padding-right: 2em;
-
-}
-
-.btn-linha3 {
-    margin-left: 6%;
-}
-
-.btn-linha2 {
-    margin-left: 15%;
-
-}
-
-.btn-linha {
-    margin-left: 20%;
-
-}
-
-.btn-linha2{
-    margin-left: 30%;
-
-}
-
-.btn-1 {
-
-    margin-left: 30%;
-
-}
-
-.btn-regimento {
-    color: black;
-    font-size: 1em;
-    margin-left: 35%;
-}
-
-.btn-info {
-    margin-left: 20%;
-}
-
-.btn-extra {
-    margin-left: 2em;
-}
-
-.btn-tg {
-    margin-left: 5%;
-    font-size: 0.8em;
-    color: black;
-    
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.btn-estagio {
-   
-    margin-left: 25%;
-    
-}
-.btn-extrapad {
- margin-left: 8em;
-    padding-left: 10em;
-    padding-right: 10em;
+    color: #343a40;
+    background-color: transparent;
+    background-image: none;
+    border-color: #343a40;
 
 }
 
 .lermais {
-    
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 45%;
-    margin-right: 45%;
-    background: brown;
-    
+    background: white; width: 100%;
 }
 
-.btn-padding {
-    padding-left:2em ;
-    padding-right: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
+.btn-tam {
+  
+
+    width: 15em;
+
+}
+
+.font-btn {
+    
+    font-size: 1.2em;
+}
+
+.font-btn:hover {
+    color: white
 }
 
 
@@ -275,6 +188,29 @@ ul {
 
 .btn-biblio {
     margin-left: 8%;
+}
+
+.lermais-pos {
+
+    margin-left:48% ;
+    margin-right:  45% ;
+
+}
+
+.lermais-pos2 {
+
+    margin-left:43% ;
+   
+
+}
+
+.tit {
+    text-align: left;
+    margin-left: none;
+}
+
+.lates {
+    margin-left: 3em;
 }
 
 
@@ -351,7 +287,7 @@ input {
 
 .atas {
 
-    margin-left: 40%;
+    margin-left: 38%;
     margin-right: 40%;
 
 }

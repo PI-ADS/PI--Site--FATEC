@@ -1,5 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
+<?php
+  /*
+    session_start(); 
+    include("../config/banco.php");
+    if(isset($_SESSION["login"]) == 1){   
+      include("../headerloged.php");
+    }else{  
+      include("../header.php");
+    }*/
+  
+    include_once ("header.php");
+  ?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +41,11 @@
         <p>R: 10 semestres.</p>
     </div>
 
+    <footer>
 
+<?php
+  include("../footer.php");
+?>
+</footer>
 </body>
 </html>

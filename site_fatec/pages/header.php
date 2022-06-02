@@ -1,87 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatec - Indaiatuba</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FATEC - ID</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="image/favicon.png">
+<style type="text/css">
+      titulo
+      {
+        color: #555555;
+        font-family: 'Dosis', sans-serif;
+        font-size: 15px;
+        line-height:28.8px;
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        margin: 0px;
+        padding: 0px;
+      }
+      p
+      {
+        color: #555555;
+        font-family: 'Dosis', sans-serif;
+        font-size: 15px;
+        line-height:28.8px;
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        margin: 0px;
+        padding: 0px;
+      }
+	  .carousel-item{
+    min-height: 280px;
+    </style>
 </head>
-<body>
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar"> 
-        <a class="navbar-brand text-white" href="./index.html"><img src="../assets/logo.png" alt="" class="fatec-logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Institucional
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop-itens">
-                      <a class="dropdown-item text-white" href="">Aluno</a>
-                      <a class="dropdown-item text-white" href="">Docentes</a>
-                      <a class="dropdown-item text-white" href="">Centro Paula Souza</a>
-                      <a class="dropdown-item text-white" href="">Contato</a>
-                      <a class="dropdown-item text-white" href="">Endereço</a>
-                      <a class="dropdown-item text-white" href="">Boletim FatecNews</a>
-                      <a class="dropdown-item text-white" href="">Regimento Fatec</a>
-                      <a class="dropdown-item text-white" href="">Plano de desenvolvimento pessoal - PDI</a>
-                      <a class="dropdown-item text-white" href="">Sobre</a>
-                      <a class="dropdown-item text-white" href="">Eventos</a>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #666666">
+        <div class="container-fluid">
+            <a href="index.php" class="navbar-brand">
+                <img src="../image/logo.png" height="55" alt="CoolBrand">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cursos</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Análise e Desenvolvimento de Sistemas</a>
+                            <a class="dropdown-item" href="#">Comércio Exterior</a>
+                            <a class="dropdown-item" href="#">Gestão Empresarial</a>
+                            <a class="dropdown-item" href="#">Gestão de Serviços</a>
+                            <a class="dropdown-item" href="#">Logística Aeroportuária</a>
+                            <a class="dropdown-item" href="#">Rede de Computadores</a>
+                            <div class="dropdown-divider"></div>
+                             <a class="dropdown-item" href="ead_logistica_aeroportuaria.php">EAD - Logistica Aeroportuária</a>
+                             <a class="dropdown-item" href="#">Curso 2 EAD</a>
+                             <a class="dropdown-item" href="#">Curso 3 EAD</a>
+                        </div>
+                    </div>
+					<div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Comunicação</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Cursos e Processos Seletivos</a>
+                            <a class="dropdown-item" href="#">Editais</a>
+                            <a class="dropdown-item" href="#">Eventos</a>
+                            <a class="dropdown-item" href="#">Fatec Acontece</a>
+                            <a class="dropdown-item" href="#">Novotec</a>
+                            <a class="dropdown-item" href="#">TV Digital</a>
+                            <a class="dropdown-item" href="#">Revista Reverte</a>
+                            <a class="dropdown-item" href="#">Revista TECSci</a>
+                            <a class="dropdown-item" href="#">Curso Pré Vestibular</a>
+                            <a class="dropdown-item" href="#">Vestibular</a>
+                            <a class="dropdown-item" href="#">Portarias</a>
+                            <a class="dropdown-item" href="#">S.A.P.</a>
+                        </div>
+                    </div>
+					<div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Setores</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="pages\biblioteca.php">Biblioteca</a>
+                            <a class="dropdown-item" href="pages\centralTI.php">Central de TI</a>
+                            <a class="dropdown-item" href="pages\congregacao.php">Congregação (ATAS)</a>
+                            <a class="dropdown-item" href="pages\estagio.php">Estágio Supervisionado</a>
+                            <a class="dropdown-item" href="#">Secretaria Acadêmica</a>
+                        </div>
+                    </div>
+				    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">SIGA</a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="https://siga.cps.sp.gov.br/aluno/login.aspx">Aluno</a>
+                           <a class="dropdown-item" href="https://siga.cps.sp.gov.br/fatec/login.aspx">Professor</a>
+                        </div>
+                    </div>
+					<div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mais</a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">AACC</a>
+                           <a class="dropdown-item" href="#">Calendário Acadêmico</a>
+                           <a class="dropdown-item" href="#">CPS</a>
+                           <a class="dropdown-item" href="#">email@fatec</a>
+                           <a class="dropdown-item" href="#">Manual Veyon</a>
+                           <a class="dropdown-item" href="#">Núcleos de Pesquisa</a>
+                           <a class="dropdown-item" href="pages\monitoria.php">Programa de Monitoria de Disciplina e Iniciação Científica</a>
+                           <a class="dropdown-item" href="#">Redefinição de Senha | E-mail Institucional</a>
+                           <a class="dropdown-item" href="#">Trabalho de Graduação</a>
+                           <a class="dropdown-item" href="#">Trabalho de Graduação</a>
+                           <a class="dropdown-item" href="pages\cadastro-vaga.php">Vagas</a>
+                           <a class="dropdown-item" href="#">WebSai</a>
+                           <a class="dropdown-item" href="pages\faq.php">FAQ</a>
+                        </div>
+                    </div>
+					<div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Institucional</a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="pages\institucional.php">Admistração</a>
+                           <a class="dropdown-item" href="pages/corpo-docente.php">Corpo Docente</a>
+                           <a class="dropdown-item" href="manual_centro_paula_souza_gestao2019_atualizado.pdf">Manual de Identida Visual</a>
+                           <a class="dropdown-item" href="#">Missão, Visão e Objetivo</a>
+                           <a class="dropdown-item" href="#">PDI</a>
+                           <a class="dropdown-item" href="#">Quem Somos</a>
+                           <a class="dropdown-item" href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/institucional/2017_39_deliberacao.pdf">Regime Disciplinar do Corpo Discente</a>
+                           <a class="dropdown-item" href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/secretaria/regimento-fatecs%202016.pdf">Regimento</a>
+                           <a class="dropdown-item" href="#">WEBSAI</a>
+                           <a class="dropdown-item" href="#">Guias de Comunicação Inclusiva</a>
+                           <a class="dropdown-item" href="pages\ouvidoria.php">Ouvidoria</a>
+                        </div>
+                    </div>
+                    <!--<a href="#" class="nav-item nav-link disabled" tabindex="-1">Area do Aluno</a> -->
                 </div>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Biblioteca</a>
-            </li>
-            
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Cursos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop-itens"> 
-                    <a class="dropdown-item text-white" href="../Curso/index.html">Presenciais</a>
-                    <a class="dropdown-item text-white" href="">EAD</a>
-                    <a class="dropdown-item text-white" href="">Iniciação científica</a>
-                    <a class="dropdown-item text-white" href="">Trabalho de graduação</a>
-                    <a class="dropdown-item text-white" href="">Vestibular</a>
+                <div class="navbar-nav ms-auto">
+				<!-- <a class="nav-item nav-link">Bem Vindo - Otavio</a> -->
+                    <a href="login.php" class="nav-item nav-link"><button type="button" class="btn btn-danger">Area do Aluno</button></a>
                 </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../Aluno/aluno.html">Área do aluno</a>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Concursos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop-itens">
-                    <a class="dropdown-item text-white" href="">Processo seletivo simplificado para docente</a>
-                    <a class="dropdown-item text-white" href="">Concurso público para docente</a>
-                    <a class="dropdown-item text-white" href="">Concurso público para auxiliar docente</a>
-                </div>
-            </li>
-           
-            <li class="nav-item">
-                <input id="myInput" type="text" placeholder="Pesquisar...">
-            </li>
-          </ul>
+            </div>
         </div>
-      </nav>
-    </div>
-
-</body>
-
-</html>
+    </nav>
+</div>

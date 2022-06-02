@@ -13,7 +13,18 @@
 <body>
 
 <header>
-
+<?php
+  /*
+    session_start(); 
+    include("../config/banco.php");
+    if(isset($_SESSION["login"]) == 1){   
+      include("../headerloged.php");
+    }else{  
+      include("../header.php");
+    }*/
+  
+    include_once ("header.php");
+  ?>
 </header>
 <h1 class="h1">Fale Conosco</h1>
   <div class="container">
@@ -78,6 +89,13 @@
     mail($email, "Email de fale conosco", $mensagem, $headers);
   }
 ?>
+<br>
+<footer>
+
+<?php
+  include("../footer.php");
+?>
+</footer>
 </body>
 </html>
 

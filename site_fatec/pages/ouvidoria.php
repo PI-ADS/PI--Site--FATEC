@@ -1,5 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
+<?php
+  /*
+    session_start(); 
+    include("../config/banco.php");
+    if(isset($_SESSION["login"]) == 1){   
+      include("../headerloged.php");
+    }else{  
+      include("../header.php");
+    }*/
+  
+    include_once ("header.php");
+  ?>
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <meta charset="UTF-8">
@@ -33,6 +46,13 @@
     <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
 
+
+  <footer>
+
+<?php
+  include("../footer.php");
+?>
+</footer>
       
   </body>
   </html>

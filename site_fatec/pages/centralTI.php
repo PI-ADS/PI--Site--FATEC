@@ -1,12 +1,13 @@
 <!-- @format -->
 <?php
-  session_start(); 
+  /*session_start(); 
   include("../config/banco.php");
   if(isset($_SESSION["login"]) == 1){   
     include("../headerloged.php");
   }else{  
-    include("../header.php");
-  }
+    include("header.php");
+  }*/
+  include_once ("header.php")
 ?>
  <link rel="stylesheet" href="style.css">
    
@@ -61,3 +62,10 @@
     </div>
   </div>
 </div>
+
+<footer>
+
+<?php
+  include("../footer.php");
+?>
+</footer>

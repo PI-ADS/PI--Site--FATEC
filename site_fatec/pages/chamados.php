@@ -18,7 +18,19 @@ include "../conexao.php";
 		exit;
 	}
 
+   /* session_start(); 
+    include("../config/banco.php");
+    if(isset($_SESSION["login"]) == 1){   
+      include("../headerloged.php");
+    }else{  
+      include("../header.php");
+    }*/
+  
+    include_once ("header.php");
+
 ?>
+
+
 <html><!doctype html>
     <head>
     <!-- Required meta tags -->
@@ -161,5 +173,12 @@ include "../conexao.php";
             </div>
         </div>
         </div>
+
+        <footer>
+
+<?php
+  include("../footer.php");
+?>
+</footer>
 	</body>
 </html>

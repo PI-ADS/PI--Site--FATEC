@@ -1,7 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
+<?php
+  /*
+    session_start(); 
+    include("../config/banco.php");
+    if(isset($_SESSION["login"]) == 1){   
+      include("../headerloged.php");
+    }else{  
+      include("../header.php");
+    }*/
+  
+    include_once ("header.php");
+  ?>
+
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,336 +26,261 @@
 <body>
     
     <div class="conteudo">
-        <h1>CORPO DOCENTE</h1>
 
+        <br>
+        <h1>CORPO DOCENTE</h1>
+<br>
         <h6>Na Fatec-ID contamos com 20 Professores Doutores, 15 Professores Mestres e 5 Professores Especialistas!</h6>
 
     </div>
+<br><br>
 
-
-    <div class="container conteudo">
+    <div class=" conteudo">
 
         <h2>Doutores</h2>
 
-      <div class="row"> 
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+        <div class="container" style="display: none;">
+      <div class="row" > 
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates "><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
     </div> 
 
     <br>
 
     <div class="row"> 
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
     </div> 
     <br>
     <div class="row"> 
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
     </div> 
     <br>
     <div class="row"> 
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
     </div> 
     <br>
     <div class="row"> 
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
     </div> 
 
 </div> 
 
-<div class="container conteudo">
+</div>
 
+<br>
+<a id='btn-div' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em";>\/</a>
+
+<div class=" conteudo">
+<br>
+<div class="tit-prof">
     <h2>Mestres</h2>
+    </div>
+    <div class="mes" style="display: none;">    
+    <div class="row" > 
 
-  <div class="row"> 
+        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+        <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+    </div> 
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-</div> 
+    <br>
 
+    <div class="row"> 
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+    </div> 
+    <br>
+    <div class="row"> 
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+    </div> 
+    <br>
+    <div class="row"> 
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+    </div> 
+    <br>
+    <div class="row"> 
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+    </div> 
+
+</div>
+
+</div>
 <br>
+<a id='btn-div1' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em";>\/</a>
 
-<div class="row"> 
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-</div> 
+<div class=" conteudo">
 <br>
-<div class="row"> 
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-</div> 
-<br>
-<div class="row"> 
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-</div> 
-<br>
-<div class="row"> 
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-</div> 
-
-</div> 
-
-
-<div class="container conteudo">
-
     <h2>Especialistas</h2>
 
-  <div class="row"> 
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+    <div class="esp" style="display: none;">
+    <div class="row" > 
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
+
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 </div> 
 
 <br>
 
 <div class="row"> 
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 </div> 
 <br>
 <div class="row"> 
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 </div> 
 <br>
 <div class="row"> 
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 </div> 
 <br>
 <div class="row"> 
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
-
-    <div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></div>
+<div class="col-sm"> <p>Ailton Bueno Scorsoline</p> <button class="btn btn-info lates"><a href="http://lattes.cnpq.br/8502462718111666" class="font-btn">Lates</a></button></div>
 </div> 
+</div>
 
 </div> 
+<br>
+<a id='btn-div2' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em";>\/</a>
+<br>
+<br>
 
-      <!--  <h3>Doutores</h3>
+<footer>
 
-        <ul>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-           
-
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </ul>
-
-
-    </div>
-
-    <div class="conteudo">
-
-
-        <h3>Mestres</h4>
-
-        <ul>
-            <li><p>Alex Rodrigo Moises Costa Wanderley</p> <button><a href="http://lattes.cnpq.br/1982412705530096">Lates</a></button></li>
-            <li><p>Alexandre Ribeiro Arantes</p> <button><a href="http://lattes.cnpq.br/2572556251200981">Lates</a></button></li>
-            <li><p> Alexandre Serrano</p> <button><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4262118H5">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4771532E3">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            
-        
-        
-        
-        
-           
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </ul>
-    </div>
-
-    <div class="conteudo">
-
-        <h3>Especialista</h3>
-
-        <ul>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            <li><p>Ailton Bueno Scorsoline</p> <button><a href="http://lattes.cnpq.br/8502462718111666">Lates</a></button></li>
-            <li><p>Aldo Nascimento Pontes</p> <button><a href="http://lattes.cnpq.br/0353109973808848">Lates</a></button></li>
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </ul>
-
-    </div>
--->
-
+<?php
+  include("../footer.php");
+?>
+</footer>
 
 </body>
 </html>
+
+<script>
+
+    var btn = document.getElementById('btn-div');
+    var container = document.querySelector('.container');
+    btn.addEventListener('click', function() {
+        
+      if(container.style.display === 'block') {
+          container.style.display = 'none';
+      } else {
+          container.style.display = 'block';
+      }
+    });
+    </script>
+
+<script>
+
+var btn = document.getElementById('btn-div1');
+var mes = document.querySelector('.mes');
+btn.addEventListener('click', function() {
+    
+  if(mes.style.display === 'block') {
+      mes.style.display = 'none';
+  } else {
+      mes.style.display = 'block';
+  }
+});
+</script>
+
+<script>
+
+var btn = document.getElementById('btn-div2');
+var esp = document.querySelector('.esp');
+btn.addEventListener('click', function() {
+    
+  if(esp.style.display === 'block') {
+      esp.style.display = 'none';
+  } else {
+      esp.style.display = 'block';
+  }
+});
+</script>
