@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar"> 
+    <a class="navbar-brand text-white" href="../Home/index.html"><img src="../assets/logo.png" alt="" class="fatec-logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="../Home/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Institucional
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop-itens">
+                  <a class="dropdown-item text-white" href="">Aluno</a>
+                  <a class="dropdown-item text-white" href="">Docentes</a>
+                  <a class="dropdown-item text-white" href="">Centro Paula Souza</a>
+                  <a class="dropdown-item text-white" href="">Contato</a>
+                  <a class="dropdown-item text-white" href="">Endereço</a>
+                  <a class="dropdown-item text-white" href="">Boletim FatecNews</a>
+                  <a class="dropdown-item text-white" href="">Regimento Fatec</a>
+                  <a class="dropdown-item text-white" href="">Plano de desenvolvimento pessoal - PDI</a>
+                  <a class="dropdown-item text-white" href="">Sobre</a>
+                  <a class="dropdown-item text-white" href="">Eventos</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Biblioteca</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cursos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop-itens"> 
+                <a class="dropdown-item text-white" href="../Curso/index.html">Presenciais</a>
+                <a class="dropdown-item text-white" href="">EAD</a>
+                <a class="dropdown-item text-white" href="">Iniciação científica</a>
+                <a class="dropdown-item text-white" href="">Trabalho de graduação</a>
+                <a class="dropdown-item text-white" href="">Vestibular</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../Aluno/aluno.html">Área do aluno</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Concursos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop-itens">
+                <a class="dropdown-item text-white" href="">Processo seletivo simplificado para docente</a>
+                <a class="dropdown-item text-white" href="">Concurso público para docente</a>
+                <a class="dropdown-item text-white" href="">Concurso público para auxiliar docente</a>
+            </div>
+        </li>
+       
+        <li class="nav-item">
+            <input id="myInput" type="text" placeholder="Pesquisar...">
+        </li>
+      </ul>
+    </div>
+  </nav>
+ 
+
+  <div class="titulo-curso2">
+    <p>Matriz Comércio Exterior</p>
+  </div>
+
+  <div class="buttons-modal">
+    <div class="containerButtons">
+      <button type="button" data-toggle="modal" data-target="#exampleModal" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Comércio Exterior
+      </button>
+    
+      <button type="button" data-toggle="modal" data-target="#exampleModal1" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Projeto em Comércio Exterior
+      </button>
+
+      <button type="button" data-toggle="modal" data-target="#exampleModal2" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Política Comercial Externa
+      </button>
+
+      <button type="button" data-toggle="modal" data-target="#exampleModal11" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Economia Internacional
+      </button>
+    </div>
+
+    <div class="containerButtons2">
+      <button type="button" data-toggle="modal" data-target="#exampleModal3" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Mercado e Finanças Internacionais
+      </button>
+
+      <button type="button" data-toggle="modal" data-target="#exampleModal4" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Sistemática do Comércio Exterior
+      </button>
+
+      <button type="button" data-toggle="modal" data-target="#exampleModal5" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Legislação Aduaneira
+      </button>
+
+      <button type="button" data-toggle="modal" data-target="#exampleModal10" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Teoria e Prática Cambial
+      </button>
+    </div>
+
+    <div class="containerButtons3">
+      <button type="button" data-toggle="modal" data-target="#exampleModal6" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Negócios Internacionais
+      </button>
+    
+      <button type="button" data-toggle="modal" data-target="#exampleModal7" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Economia
+      </button>
+
+      <button type="button" data-toggle="modal" data-target="#exampleModal8" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Estágio Supervisionado
+      </button>
+
+      <button type="button" data-toggle="modal" data-target="#exampleModal9" id="radius-button" class="button-in-modal">
+        <i class="fa-solid fa-user"></i>
+        <br>
+        Trabalho de Graduação
+      </button>
+    </div>
+
+    <nav class="nav-pag" aria-label="...">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="../Detalhes-Curso/comex.html">Voltar</a>
+        <li class="page-item disabled">
+          <a class="page-link" href="index.html" tabindex="-1">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="page3.html">3</a></li>
+      </ul>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comércio Exterior</h5>
+          </div>
+          <div class="modal-body">
+            <p>Na matéria de <strong>Comércio Exterior</strong> você irá aprender..<br><br>
+              <strong>Professor(a):</strong> ... <Br>
+              <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Projeto em Comércio Exterior</h5>
+          </div>
+          <div class="modal-body">
+            <p>Na matéria de <strong>Projeto em Comércio Exterior</strong> você irá aprender..<br><br>
+              <strong>Professor(a):</strong> ... <Br>
+              <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Política Comercial Externa</h5>
+          </div>
+          <div class="modal-body">
+            <p>Na matéria de <strong>...</strong>Política Comercial Externa<br><br>
+              <strong>Professor(a):</strong> ... <Br>
+              <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="modal fade" id="exampleModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Economia Internacional</h5>
+            </div>
+            <div class="modal-body">
+              <p>Na matéria de <strong>Economia Internacional</strong> você irá aprender..<br><br>
+                <strong>Professor(a):</strong> ... <Br>
+                <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Mercado e Finanças Internacionais</h5>
+        </div>
+        <div class="modal-body">
+          <p>Na matéria de <strong>Mercado e Finanças Internacionais</strong> você irá aprender..<br><br>
+            <strong>Professor(a):</strong> ... <Br>
+            <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sistemática do Comércio Exterior</h5>
+        </div>
+        <div class="modal-body">
+          <p>Na matéria de <strong>Sistemática do Comércio Exterior</strong> você irá aprender..<br><br>
+            <strong>Professor(a):</strong> ... <Br>
+            <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Legislação Aduaneira</h5>
+        </div>
+        <div class="modal-body">
+          <p>Na matéria de <strong>Legislação Aduaneira</strong> você irá aprender..<br><br>
+            <strong>Professor(a):</strong> ... <Br>
+            <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Teoria e Prática Cambial</h5>
+        </div>
+        <div class="modal-body">
+          <p>Na matéria de <strong>Teoria e Prática Cambial</strong> você irá aprender..<br><br>
+            <strong>Professor(a):</strong> ... <Br>
+            <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Negócios Internacionais</h5>
+        </div>
+        <div class="modal-body">
+          <p>Na matéria de <strong>Negócios Internacionais</strong> você irá aprender..<br><br>
+            <strong>Professor(a):</strong> ... <Br>
+            <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Economia</h5>
+        </div>
+        <div class="modal-body">
+          <p>Na matéria de <strong>Economia</strong> você irá aprender..<br><br>
+            <strong>Professor(a):</strong> ... <Br>
+            <strong>Lates:</strong><a href="#" target="_blank">VEJA AQUI</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Estágio Supervisionado</h5>
+        </div>
+        <div class="modal-body">
+          <p>Para o <strong>Estágio Supervisionado</strong>, o aluno deverá realizar 240 horas de estágio, e poderá realizar a partir do 3* Semestre <br><br><br>
+            <strong>Coordenador(a) de Estágios:</strong> Michel Moron Munhoz <Br>
+              <strong>Lates:</strong><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4458045Z8" target="_blank">VEJA AQUI</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Trabalho de Graduação</h5>
+        </div>
+        <div class="modal-body">
+          <p><strong>Trabalho de Graduação</strong> 160 horas a partir do 5* Semestre.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2022 Fatec Indaiatuba. SP | Telefone: (19) 3809-1234 </p>
+    <div>
+      <a href="">
+        <i class="fa-brands fa-facebook"></i>Facebook
+      </a>
+      <a href="">
+        <i class="fa-brands fa-instagram"></i>Instagram
+      </a>
+      <a href="">
+        <i class="fa-solid fa-envelope"></i>Email
+      </a>
+    </div>
+    <p> Powered by Alunos da Fatec Indaiatuba</p>
+  </div>
+  <script src="https://kit.fontawesome.com/650f3fb109.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

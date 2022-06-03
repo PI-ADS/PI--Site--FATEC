@@ -1,0 +1,879 @@
+
+@media (max-width: 576px) {
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+        font-size: 33px;
+        margin-top: 10px;
+
+    }
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    .side-and-iframe{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+    }
+
+    iframe{
+        width: 90vw;
+        height: 300px;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+
+    .side-left{
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-left h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    .sub-info i{
+        font-size: 2rem;
+    }
+
+    .sub-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+
+    }
+
+    .sub-info span{
+        margin-left: 15px;
+    }
+
+    .side-right{
+        margin-top: 20px;
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-right h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    #radius-button{
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        height: 15vh;
+        width: 70vw;
+        margin: 20px;
+        margin-left: 90px;
+        padding: 10px;
+        border-radius: 15%;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    #radius-button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #fff;
+    }
+
+    .list-of-buttons{
+        margin: 5vh 0 5vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titulo-curso2{
+        color: black;
+        font-weight: 600;
+        font-family: Roboto;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .nav-pag{
+        margin-top: 10px;
+    }
+
+    .pagination {
+        margin-left: 60vw;
+    }
+
+    
+ }
+
+@media (min-width: 576px) {
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+        font-size: 38px;
+        margin-top: 20px;
+
+    }
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+
+    .side-and-iframe{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+    }
+
+    iframe{
+        width: 90vw;
+        height: 300px;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+
+    .side-left{
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-left h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    .sub-info i{
+        font-size: 2rem;
+    }
+
+    .sub-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+
+    }
+
+    .sub-info span{
+        margin-left: 15px;
+    }
+
+    .side-right{
+        margin-top: 20px;
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-right h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+    #radius-button{
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        height: 14vh;
+        width: 20vw;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    #radius-button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #fff;
+    }
+
+    .list-of-buttons{
+        margin: 5vh 0 5vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80vw;
+        margin-left: 10%;
+        flex: 1;
+    }
+
+    .titulo-curso2{
+        color: black;
+        font-weight: 600;
+        font-family: Roboto;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .nav-pag{
+        margin-top: 10px;
+    }
+
+    .pagination {
+        margin-left: 70vw;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+
+    }
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+
+    #radius-button{
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        height: 20vh;
+        width: 30vw;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    #radius-button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #fff;
+    }
+
+    .list-of-buttons{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80vw;
+        margin-left: 10%;
+        flex: 1;
+    }
+
+    .titulo-curso2{
+        color: black;
+        font-weight: 600;
+        font-family: Roboto;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .nav-pag{
+        margin-top: 10px;
+    }
+
+    .pagination {
+        margin-left: 70vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+ 
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+
+    }
+
+
+    .side-and-iframe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+    }
+
+    iframe{
+        border-radius: 20px;
+        max-width: 1000px;
+        margin: 10px 2vw 0 2vw;
+        height: 500px;
+        flex: 10;
+    }
+
+
+    .side-left{
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-left h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    .sub-info i{
+        font-size: 2rem;
+    }
+
+    .sub-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+
+    }
+
+    .sub-info span{
+        margin-left: 15px;
+    }
+
+    .side-right{
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-right h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    #radius-button{
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        height: 15vh;
+        width: 15vw;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #radius-button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #fff;
+    }
+
+    .list-of-buttons{
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60vw;
+        margin: 0 20vw 5vh 20vw;
+    }
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80vw;
+        margin-left: 10%;
+        flex: 1;
+    }
+
+    .titulo-curso2{
+        color: black;
+        font-weight: 600;
+        font-family: Roboto;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .nav-pag{
+        margin-top: 100px;
+    }
+
+    .pagination {
+        margin-left: 83vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+
+    } 
+
+    #radius-button{
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        height: 14vh;
+        width: 18vw;
+        margin: 30px;
+        padding: 30px;
+        border-radius: 9%;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #radius-button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #fff;
+    }
+
+    .side-and-iframe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+    }
+
+    iframe{
+        border-radius: 20px;
+        max-width: 1000px;
+        margin: 10px 2vw 0 2vw;
+        height: 500px;
+        flex: 10;
+    }
+
+
+    .side-left{
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-left h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    .sub-info i{
+        font-size: 2rem;
+    }
+
+    .sub-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+
+    }
+
+    .sub-info span{
+        margin-left: 15px;
+    }
+
+    .side-right{
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-right h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    .buttons-modal{
+        /* display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px; */
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        width: 80vw !important;
+    }
+
+    .buttons-modal{
+        /* display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px; */
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        width: 100vw !important;
+    }
+
+    .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80vw;
+        margin-left: 10%;
+        flex: 1;
+    }
+
+    .buttons-modal{
+        height: 16vh;
+        width: 10vw;
+        transition: all 0.5s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+    }
+
+    .titulo-curso2{
+        color: black;
+        font-weight: 600;
+        font-family: Roboto;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .pagination {
+        margin-left: 78vw;
+    }
+
+ }
+
+@media (min-width: 1400px) {
+    .fatec-logo{
+        width: 100px;
+        height: 60px;
+        opacity: .8;
+        margin-top: 0;
+    }
+
+    .footer{
+        position: fixed;
+    }
+
+    .titulo-curso{
+        color: #8c0c0c;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 38px;
+    }
+
+    .list-of-buttons{
+        margin-top: -60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 60vw;
+        margin: 0 20vw 5vw 20vw;
+    }
+
+    .list-of-buttons a{
+        max-width: 10vw;
+        margin-right: 20px;
+    }
+
+    #radius-button{
+        background: rgb(251,133,133);
+        background: linear-gradient(180deg, rgba(251,133,133,1) 0%, rgba(140,12,12,1) 95%, rgba(140,12,12,1) 100%);
+        height: 14vh;
+        width: 16vw;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+
+    #radius-button:hover{
+        opacity: .9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #fff;
+    }
+
+    
+
+    .side-and-iframe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+    }
+
+    iframe{
+        border-radius: 20px;
+        max-width: 1000px;
+        margin: 10px 2vw 0 2vw;
+        height: 34vh;
+        flex: 10;
+    }
+
+
+    .side-left{
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-left h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    .sub-info i{
+        font-size: 2rem;
+    }
+
+    .sub-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+
+    }
+
+    .sub-info span{
+        margin-left: 15px;
+    }
+
+    .side-right{
+        flex: 5;
+        background-color: rgb(250, 248, 248);
+        height: 100%;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .side-right h2{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+    }
+
+    .footer{
+        margin-bottom: 1;
+    }
+
+    /* .buttons-modal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px; */
+        /* display: flex;
+        flex-direction: column;
+        height: 95vh;
+        width: 100vw !important;
+    }
+
+    /* .containerButtons, .containerButtons2, .containerButtons3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 80vw;
+        margin-left: 5%;
+        flex: 1;
+    } */
+
+    .nav-pag{
+        margin-top: 30px;
+    }
+
+    .pagination {
+        margin-left: 80vw;
+    }
+
+    .titulo-curso2{
+        color: black;
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 28px;
+    }
+
+ }

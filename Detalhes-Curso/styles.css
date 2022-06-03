@@ -672,6 +672,20 @@
     .footer{
         margin-bottom: 1;
     }
+
+    .buttons-modal{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 10px 50px 130px;
+    }
+
+    .button-in-modal{
+        margin-top: 40px !important;
+    }
+
+    .teste{
+        width: 100% !important;
+    }
  }
 
  
