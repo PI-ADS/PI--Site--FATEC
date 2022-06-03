@@ -1,5 +1,5 @@
 <?php
-include("../conexao.php");
+    include("../config/banco.php");
 	$ra = $_POST['ra'];
 	$emailSoli = $_POST['emailSoli'];
 	$local = $_POST['local'];

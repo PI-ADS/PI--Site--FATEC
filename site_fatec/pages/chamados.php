@@ -1,8 +1,8 @@
 <?php
 
-include "../conexao.php";
+    include("../config/banco.php");
 
-$sql_code = "SELECT s.ID_SUPORTE, s.DESCRICAO, s.OBSERVACOES, 
+    $sql_code = "SELECT s.ID_SUPORTE, s.DESCRICAO, s.OBSERVACOES, 
         DATE_FORMAT(STR_TO_DATE(s.DT_ABERTURA, '%Y-%m-%d'), '%d/%m/%Y') as DT_ABERTURA,
         case 
         when s.STATUS = 'A' then 'Aberto'
@@ -11,91 +11,80 @@ $sql_code = "SELECT s.ID_SUPORTE, s.DESCRICAO, s.OBSERVACOES,
         else 'Adult'
         end as STATUS
     FROM fatecid.TB_SUPORTE s";
-$sql_query = $conn->query($sql_code) or die($conn->error);
-if ($sql_query == false) {
-    echo "error";
-    exit;
-}
-
-/* session_start(); 
-    include("../config/banco.php");
-    if(isset($_SESSION["login"]) == 1){   
-      include("../headerloged.php");
-    }else{  
-      include("../header.php");
-    }*/
-
-include_once("header.php");
+	$sql_query = $conn->query($sql_code) or die($conn->error);
+	if($sql_query == false)
+	{
+		echo "error";
+		exit;
+	}
+    include_once ("header.php");
 
 ?>
 
-
-<html>
-<!doctype html>
-
-<head>
+<html><!doctype html>
+    <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Controle de chamados</title>
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css.map">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.min.css.map">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.css">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.css.map">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.min.css.map">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css.map">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css.map">
-    <link rel="stylesheet" type="text/css" href="../scss/custom.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../scss/custom.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Importando o jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Importando o js do bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+	<body>
+	<br>
+		<center>
+            <form class="form-inline" method="GET" action="pesquisar.php">
+                <label>Pesquisar por Status</label>
+                <select class="form-select w-50" id="status" name="status">
+                    <option selected value='A'>Aberto</option>
+                    <option value="F">Fechado</option>
+                    <option value="P">Em análise</option>
+                </select>
+                <br>
+                <button type="submit" name="enviar" class="btn btn-info"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCadastro1" > Abrir novo chamado</button>
+            </form>           
+        </center>	
+		<!-- Validação -->
+		<?php 
+			echo '<table class="table table-striped table-hover">';
+				echo '<thead>';
+                    echo '<tr>';
+                        echo '<td><p>Código:</p></td>';
+                        echo'<td><p>Descrição:</p></td>';
+                        echo'<td><p>Status:</p></td>';
+                        echo'<td><p>Data de Abertura:</p></td>';
+                        echo '<td><p>Observação:</p></td>';
+                    echo '</tr>';
+				echo '</thead>';
+				echo '<tbody>'; 
+						while($dado =mysqli_fetch_array($sql_query)){ ?>
+				   <tr>
+						<td><?php echo $dado["ID_SUPORTE"];?></td>
+						<td><?php echo $dado["DESCRICAO"];?></td>
+						<td><?php echo $dado["STATUS"];?></td>
+						<td><?php echo $dado["DT_ABERTURA"];?></td>
+						<td><?php echo $dado["OBSERVACOES"];?></td>
+						</tr><br>
 
-<body>
-    <br><br>
-    <center>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCadastro"> Abrir novo chamado</button>
-    </center>
-    <!-- Validação -->
-    <?php
-    echo '<table class="table">';
-    echo '<thead>';
-    echo '<tr>';
-    echo '<td><p>Código:</p></td>';
-    echo '<td><p>Descrição:</p></td>';
-    echo '<td><p>Status:</p></td>';
-    echo '<td><p>Data de Abertura:</p></td>';
-    echo '<td><p>Observação:</p></td>';
-    echo '</tr>';
-    echo '</thead>';
-    echo '<tbody>';
-    while ($dado = mysqli_fetch_array($sql_query)) { ?>
-        <tr>
-            <td><?php echo $dado["ID_SUPORTE"]; ?></td>
-            <td><?php echo $dado["DESCRICAO"]; ?></td>
-            <td><?php echo $dado["STATUS"]; ?></td>
-            <td><?php echo $dado["DT_ABERTURA"]; ?></td>
-            <td><?php echo $dado["OBSERVACOES"]; ?></td>
-        </tr><br>
+						<?php } 
+                echo '</tbody>'; ?>
+                
 
-    <?php }
-    echo '</tbody>'; ?>
-
-
-    </table>
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastroLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+		</table>
+<footer>
+<!--  
+<?php
+  include_once("../footer.php");
+?> -->
+</footer>
+        <!-- Modal -->
+        <div class="modal fade" id="modalCadastro1" tabindex="-1" role="dialog" >
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalCadastroLabel">Abertura de Chamado</h5>
@@ -176,12 +165,29 @@ include_once("header.php");
         </div>
     </div>
 
-    <footer>
-
         <?php
-        include("../footer.php");
+            if(isset($_GET['enviar'])) {
+            
+                $status = $_GET['status'];
+                $sql_code = "SELECT s.ID_SUPORTE, s.DESCRICAO, s.OBSERVACOES, 
+                                    DATE_FORMAT(STR_TO_DATE(s.DT_ABERTURA, '%Y-%m-%d'), '%d/%m/%Y') as DT_ABERTURA,
+                                    case 
+                                    when s.STATUS = 'A' then 'Aberto'
+                                    when s.STATUS = 'F' then 'Fechado'
+                                    when s.STATUS = 'P' then 'Pendente'
+                                    else ''
+                                    end as STATUS
+                                FROM fatecid.TB_SUPORTE s where s.STATUS like '%$status%'";
+                $sql_query = $conn->query($sql_code) or die($conn->error);
+                if($sql_query == false)
+                {
+                    echo "error";
+                    exit;
+                }else{
+                    
+				echo "<meta http-equiv='refresh' content='0, url=./chamados.php'>";
+                }
+            }
         ?>
-    </footer>
-</body>
-
+	</body>
 </html>

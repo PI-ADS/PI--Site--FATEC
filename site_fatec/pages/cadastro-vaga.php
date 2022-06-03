@@ -1,92 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
 <?php
-/*
-  session_start(); 
   include("../config/banco.php");
-  if(isset($_SESSION["login"]) == 1){   
-    include("../headerloged.php");
-  }else{  
-    include("../header.php");
-  }*/
+  $txtcnpj = $_POST['txtcnpj'];
+	$razaoSocial = $_POST['razaoSocial'];
+	$emailContato = $_POST['emailContato'];
+	$descricao = $_POST['descricao'];
+	$observacoes = $_POST['observacoes'];
+	$requisitos = $_POST['requisitos'];
+	$sobre = $_POST['sobre'];
+	$dtFechamento = $_POST['dtFechamento'];
+	// $verificausuario = mysqli_query($conn,"SELECT usuario FROM usuarios where usuario = '$usuario'" );
+	// if (mysqli_num_rows($verificausuario) > 0){
+	// 	echo "<script>alert('Usuário já existe.'); history.back();</script>";
+	// }else{
+    $txtcnpj = trim($txtcnpj); 
+    $razaoSocial = trim($razaoSocial); 
+    $emailContato = trim($emailContato); 
+    $descricao = trim($descricao); 
+	$observacoes = trim($observacoes); 
+	$requisitos = trim($requisitos); 
+	$sobre = trim($sobre); 
+	$dtFechamento = trim($dtFechamento); 
+     if(empty($txtcnpj)){
+		echo "<script>alert('Preencha o campo CNPJ para cadastrar nova vaga.'); history.back();</script>";
+	}elseif(empty($razaoSocial)){
+		echo "<script>alert('Preencha o campo Razão Social para cadastrar nova vaga.'); history.back();</script>";
+	}elseif(empty($sobre)){
+		echo "<script>alert('Preencha o campo Descrição da Vaga para cadastrar nova vaga.'); history.back();</script>";
+	}elseif(empty($emailContato)){
+		echo "<script>alert('Preencha o campo e-mail de contato para cadastrar nova vaga.'); history.back();</script>";
+	}elseif(empty($dtFechamento)){
+		echo "<script>alert('Preencha o campo Data de Fechamento da Vaga para cadastrar nova vaga.'); history.back();</script>";
+	} else{
+         
+        $sql = "INSERT INTO fatecid.TB_VAGAS(descricao, razaoSocial, REQUISITO, DT_ABERTURA, DT_FECHAMENTO, OBSERVACOES, CNPJ_EMPRESA, EMAIL_CONTATO) 
+        VALUES('$descricao','$razaoSocial','$requisitos', NOW(),'$dtFechamento', '$observacoes','$txtcnpj','$emailContato')";
 
-include_once("header.php");
-
+        if ($conn->query($sql) === TRUE) {
+            echo "
+                <script>
+                    alert('Vaga cadastrada com sucesso!');
+                    location.href='vagas.php'; 
+                </script>";
+        } else {
+            echo $sql;
+        }
+    }
 ?>
-
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-
-<body>
-
-
-
-
-  <form class="container mt-6 ml-6">
-
-    <br>
-    <h1>Cadastre sua Vaga!</h1>
-    <br>
-    <div class="conteudo" ;>
-      <div class="form-group ">
-        <label for="razaoSocial">Razão Social</label>
-        <input class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="cnpj">CNPJ</label>
-        <input class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="vaga">Titulo da Vaga</label>
-        <input class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="exampleInputEmail1">Endereço de email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-      </div>
-
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Requisitos</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Descricão da Vaga</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Outras Informacões</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-
-
-      <button type="submit" class="btn btn-primary ">Enviar</button>
-  </form>
-
-  </div>
-
-  <br>
-  <footer>
-
-    <?php
-    include("../footer.php");
-    ?>
-  </footer>
-
-
-</body>
-
-
-</html>
