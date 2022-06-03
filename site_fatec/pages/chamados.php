@@ -21,13 +21,14 @@
 
 ?>
 
-<html><!doctype html>
+<!doctype html>
     <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Controle de chamados</title>
     <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" type="text/css" href="../scss/custom.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -50,32 +51,35 @@
             </form>           
         </center>	
 		<!-- Validação -->
-		<?php 
-			echo '<table class="table table-striped table-hover">';
-				echo '<thead>';
-                    echo '<tr>';
-                        echo '<td><p>Código:</p></td>';
-                        echo'<td><p>Descrição:</p></td>';
-                        echo'<td><p>Status:</p></td>';
-                        echo'<td><p>Data de Abertura:</p></td>';
-                        echo '<td><p>Observação:</p></td>';
-                    echo '</tr>';
-				echo '</thead>';
-				echo '<tbody>'; 
-						while($dado =mysqli_fetch_array($sql_query)){ ?>
-				   <tr>
-						<td><?php echo $dado["ID_SUPORTE"];?></td>
-						<td><?php echo $dado["DESCRICAO"];?></td>
-						<td><?php echo $dado["STATUS"];?></td>
-						<td><?php echo $dado["DT_ABERTURA"];?></td>
-						<td><?php echo $dado["OBSERVACOES"];?></td>
-						</tr><br>
+        <div class="conteudo">
+            <?php 
+                echo '<table class="table table-striped table-hover">';
+                    echo '<thead>';
+                        echo '<tr>';
+                            echo '<td><p>Código:</p></td>';
+                            echo'<td><p>Descrição:</p></td>';
+                            echo'<td><p>Status:</p></td>';
+                            echo'<td><p>Data de Abertura:</p></td>';
+                            echo '<td><p>Observação:</p></td>';
+                        echo '</tr>';
+                    echo '</thead>';
+                    echo '<tbody>'; 
+                            while($dado =mysqli_fetch_array($sql_query)){ ?>
+                    <tr>
+                            <td><?php echo $dado["ID_SUPORTE"];?></td>
+                            <td><?php echo $dado["DESCRICAO"];?></td>
+                            <td><?php echo $dado["STATUS"];?></td>
+                            <td><?php echo $dado["DT_ABERTURA"];?></td>
+                            <td><?php echo $dado["OBSERVACOES"];?></td>
+                            </tr><br>
 
-						<?php } 
-                echo '</tbody>'; ?>
-                
+                            <?php } 
+                    echo '</tbody>'; ?>
+                    
 
-		</table>
+            </table>
+        </div>
+        
 <footer>
 <!--  
 <?php
