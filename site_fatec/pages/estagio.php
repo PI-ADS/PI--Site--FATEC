@@ -35,7 +35,7 @@ include_once("header.php");
 
     <h3>Cronograma</h3>
     <br />
-    
+
     <div style="margin-left: 1em ;">
       <p>
         PERIODICIDADE DE ENTREGA DOS RELATÓRIOS DE ESTÁGIO SUPERVISIONADO – 1º
@@ -44,7 +44,7 @@ include_once("header.php");
       <p>06 a 11/06 – Entrega de documentos para validação de estágio</p>
       <br>
       <div class="tit">
-      <h4>ATENÇÃO ALUNOS:</h4>
+        <h4>ATENÇÃO ALUNOS:</h4>
       </div>
       <p>
         Para cumprimento da disciplina, enviar os documentos através do e-mail:
@@ -70,11 +70,11 @@ include_once("header.php");
           Clique Aqui &#11015;</a>
       </li>
     </ul>
-<br>
-    <a id='btn-div' class="btn btn-outline-secondary lermais-pos2"; style="font-size:0.6em">\/</a>
+    <br>
+    <a id='btn-div' class="btn btn-outline-secondary lermais-pos2" ; style="font-size:0.6em">\/</a>
 
     <br>
-<br>
+    <br>
     <h3>Documentos para contrato de estágio</h3>
     <br />
     <ul class="doc1" style="display: none; ">
@@ -97,26 +97,26 @@ include_once("header.php");
       </li>
     </ul>
     <br>
-    <a id='btn-div1' class="btn btn-outline-secondary lermais-pos2" style="font-size:0.6em";>\/</a>
-  
+    <a id='btn-div1' class="btn btn-outline-secondary lermais-pos2" style="font-size:0.6em" ;>\/</a>
 
-  <br>
-  <br />
-  <div class="container" style="margin-left: 2em;">
-    <div class="row">
-      <div class="col-sm">
-        <button class="btn btn-secondary btn-tam">
-          <a href="http://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2008/Lei/L11788.htm" class="font-btn">LEI DO ESTÁGIO</a> </button>
+
+    <br>
+    <br />
+    <div class="container" style="margin-left: 2em;">
+      <div class="row">
+        <div class="col-sm">
+          <button class="btn btn-secondary btn-tam">
+            <a href="http://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2008/Lei/L11788.htm" class="font-btn">LEI DO ESTÁGIO</a> </button>
+        </div>
+
+        <div class="col-sm">
+          <button class="btn btn-secondary btn-tam">
+            <a href="./vagas.html" class="font-btn">Vagas</a>
+
+          </button>
+        </div>
       </div>
-   
-    <div class="col-sm">
-      <button class="btn btn-secondary btn-tam">
-        <a href="./vagas.html" class="font-btn">Vagas</a>
-
-      </button>
     </div>
-  </div>
-  </div>
 
   </div>
 
@@ -133,29 +133,27 @@ include_once("header.php");
 </html>
 
 <script>
+  var btn = document.getElementById('btn-div');
+  var doc = document.querySelector('.doc');
+  btn.addEventListener('click', function() {
 
-    var btn = document.getElementById('btn-div');
-    var doc = document.querySelector('.doc');
-    btn.addEventListener('click', function() {
-        
-      if(doc.style.display === 'block') {
-        doc.style.display = 'none';
-      } else {
-        doc.style.display = 'block';
-      }
-    });
-    </script>
+    if (doc.style.display === 'block') {
+      doc.style.display = 'none';
+    } else {
+      doc.style.display = 'block';
+    }
+  });
+</script>
 
 <script>
+  var btn = document.getElementById('btn-div1');
+  var doc1 = document.querySelector('.doc1');
+  btn.addEventListener('click', function() {
 
-var btn = document.getElementById('btn-div1');
-var doc1 = document.querySelector('.doc1');
-btn.addEventListener('click', function() {
-    
-  if(doc1.style.display === 'block') {
-    doc1.style.display = 'none';
-  } else {
-    doc1.style.display = 'block';
-  }
-});
+    if (doc1.style.display === 'block') {
+      doc1.style.display = 'none';
+    } else {
+      doc1.style.display = 'block';
+    }
+  });
 </script>

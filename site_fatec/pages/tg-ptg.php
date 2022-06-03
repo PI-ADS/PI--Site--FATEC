@@ -23,18 +23,24 @@
     <title>Trabalho de Graduação</title>
   </head>
   <body>
+  <div class="conteudo" style="border-bottom: solid 2px ;">
     <div>
+      <br>
       <h1>Trabalhos de Graduacao</h1>
     </div>
-
-    <div class="conteudo">
+<br>
+<br>
+    
       <h3>NORMATIZAÇÃO</h3>
       <br />
       <p>
         O objetivo deste documento é estabelecer normas para a apresentação
         escrita dos Projetos de Trabalho de Graduação (PTG) e dos Trabalhos de
         Graduação (TG) dos Cursos Superiores de Tecnologia da Faculdade de
-        Tecnologia de Indaiatuba. <span id="more"> Esses trabalhos devem seguir as normas
+        Tecnologia de Indaiatuba. 
+        </p>
+        <p class="lermais" style="display: none; ">
+        Esses trabalhos devem seguir as normas
         estabelecidas pela instituição, que estão de acordo com a ABNT 2002
         (Associação Brasileira de Normas Técnicas). A ABNT é o Fórum Nacional de
         Normalização, representante da ISO (International Organization for
@@ -46,8 +52,8 @@
         Referências Bibliográficas; NBR 6024 – Numeração progressiva das seções;
         a NBR 6027 – Sumário; a NBR 6028 – Resumo; e a NBR 10520 – Apresentação
         de citações em documentos.
-      </p></span>
-      <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
+      </p>
+      <a id='btn-div' class="btn btn-outline-secondary lermais-pos" ;>\/</a>
 
 
 
@@ -58,14 +64,22 @@
         Clique Aqui &#11015;</a
       >
     </p>
+ <br>
     </div>
+<br>
+    
 
-    <div class="conteudo">
+  </div>
+  <br>
+<div class="conteudo" style="border-bottom: solid 2px ;">
+
+
       <h3>INSTRUÇÕES PARA ENTREGA DE ARQUIVO DIGITAL</h3>
-
+<br>
       <p>O e-mail do CD deve conter as seguintes informações:</p>
       <p>Assunto: Nome e R.A. (Ex. Marina Telles / 10534859483748983)</p>
-      <span id="more">
+
+      <div class="lermais1" style="display: none; ">
 
       <p>Corpo do E-mail:</p>
       <p>1) Curso</p>
@@ -90,15 +104,20 @@
         tg@fatecindaiatuba.edu.br
       </p>
     </div>
-  </span> 
-  <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
+<br>
+  
+    <a id='btn-div1' class="btn btn-outline-secondary lermais-pos" ;>\/</a>
 
 
+<br><br>
 
 
+  </div>
 
+  <br>
+<div class="conteudo" style="border-bottom: solid 2px ;">
 
-    <div class="conteudo">
+    
       <h3>LINKS PARA PESQUISA</h3>
       <br />
       <p><p class="bold">
@@ -111,7 +130,7 @@
         normas que estão em vigor e aquelas que foram canceladas ou
         substituídas.
       </p>
-      <span id="more">
+      <div class="lermais2" style="display: none; ">
 
       <br>
 
@@ -194,11 +213,20 @@
         sobre diversas áreas do conhecimento.
       </p>
 
+        </div> 
 
+        <a id='btn-div2' class="btn btn-outline-secondary lermais-pos" ;>\/</a>
 
-    </span> 
-    <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
       <br>
+<br>
+
+
+
+        </div>
+
+        <br>
+<div class="conteudo" style="border-bottom: solid 2px ;">
+
 
       <h3>ACERVOS DIGITAIS</h3>
 
@@ -211,7 +239,7 @@
         ><br />Acervo com mais de 300 edições da revista, desde 1987. Disponível
         gratuitamente.
       </p>
-      <span id="more">
+      <div class="lermais3" style="display: none; ">
 <br>
       <p><p class="bold">
         Phorte Educacional»&nbsp; </p><a
@@ -225,12 +253,20 @@
         que a tornam indispensável a qualquer estudante ou profissional.
       </p>
     </div>
+<br>
+    <a id='btn-div3' class="btn btn-outline-secondary lermais-pos" ;>\/</a>
+<br><br>
+  
 
-    <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
 
-    <div class="conteudo">
+        </div>
+
+        <br>
+
+<div class="conteudo" style="border-bottom: solid 2px ;">
+  <br>
       <h3>MODELOS E DOCUMENTOS</h3>
-
+<br>
       <h4>Clique nos links abaixo para fazer o download dos documentos:</h4>
       <br>
 
@@ -291,29 +327,43 @@
     </li>
 
     </ul>
-    </div>
+    
 
     <br>
-
-    <div class="btn-linha2">
-      <button class="  btn-tg">
-        <a
+    
+   <div style="margin-left:20%;">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm">
+    <button class="btn btn-secondary btn-tam">
+        <a style="font-size:0.7em;"
           href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/tg/DELINEAMENTO%20DE%20PESQUISA%20PAISAGEM_2019.pdf"
         ></a
         >Delineamento de Pesquisa
       </button>
-      <button class=" btn-tg">
-        <a
+      </div>
+      <div class="col-sm">
+      <button class="btn btn-secondary btn-tam">
+        <a style="font-size:0.7em;"
           href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/tg/CAPITULO%20II_2019.pdf"
         ></a
         >Delineamento do Capítulo II de TG
       </button>
+      </div>
     </div>
+    </div>
+    </div>
+<br><br>
+        </div>
+        </div>
+        </div>
+        <br>
+<div class="conteudo" style="border-bottom: solid 2px ;">
 
-    <div class="conteudo">
+
       <h3>GUIA PARA GRAVACAO DE VIDEO</h3>
 
-
+<br>
 
       <ul> <h5>Dicas do Professor Osmar – vídeo 1:</h5>
         <li>Gravação Manual com celular.</li>
@@ -351,7 +401,11 @@
         allowfullscreen
       ></iframe>
     </div>
-
+    </div>
+    </div>
+        </div>
+    <br>
+    <br>
     <footer>
 
 <?php
@@ -360,3 +414,55 @@
 </footer>
   </body>
 </html>
+
+<script>
+      var btn = document.getElementById('btn-div');
+      var lermais = document.querySelector('.lermais');
+      btn.addEventListener('click', function() {
+
+        if (lermais.style.display === 'block') {
+          lermais.style.display = 'none';
+        } else {
+          lermais.style.display = 'block';
+        }
+      });
+    </script>
+
+<script>
+      var btn = document.getElementById('btn-div1');
+      var lermais1 = document.querySelector('.lermais1');
+      btn.addEventListener('click', function() {
+
+        if (lermais1.style.display === 'block') {
+          lermais1.style.display = 'none';
+        } else {
+          lermais1.style.display = 'block';
+        }
+      });
+    </script>
+
+<script>
+      var btn = document.getElementById('btn-div2');
+      var lermais2 = document.querySelector('.lermais2');
+      btn.addEventListener('click', function() {
+
+        if (lermais2.style.display === 'block') {
+          lermais2.style.display = 'none';
+        } else {
+          lermais2.style.display = 'block';
+        }
+      });
+    </script>
+
+<script>
+      var btn = document.getElementById('btn-div3');
+      var lermais3 = document.querySelector('.lermais3');
+      btn.addEventListener('click', function() {
+
+        if (lermais3.style.display === 'block') {
+          lermais3.style.display = 'none';
+        } else {
+          lermais3.style.display = 'block';
+        }
+      });
+    </script>
