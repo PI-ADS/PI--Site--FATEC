@@ -20,7 +20,7 @@
   <div id="container">
   <div class="col-md-12"></div>
 
-    <div class="card" style="width: 33.33%;
+    <div class="card" style="width: 31.33%;
         display: inline-block;
         font-size: 3vw;
         text-align: center;
@@ -32,7 +32,8 @@
             <a href="#" class="btn btn-primary">Acessar</a>
         </div>
     </div>
-    <div class="card" style="width: 33.33%;
+    <div class="card" style="width: 31.33%;
+        margin-left: 27px;
         display: inline-block;
         margin-right: 0vw;
         font-size: 3vw;
@@ -46,13 +47,14 @@
             <a href="#" class="btn btn-primary">Acessar</a>
         </div>
     </div>
-    <div class="card" style="width: 33.33%;
+    <div class="card" style="width: 31.33%;
         display: inline-block;
         margin-right: 0vw;
         font-size: 3vw;
         text-align: center;
         padding: 0vw 0vw 0vw 0vw;
         min-width:20vw;
+        margin-left:5px;
         float:right;">
         <img src="..\image\chamado.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -63,6 +65,7 @@
   </div>
 </div>
 
+<br><br>
 <footer>
 
 <?php
