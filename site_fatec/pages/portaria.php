@@ -32,7 +32,7 @@ include_once("header.php");
   <br><br>
 
 
-  <div class="conteudo">
+  <div style="width:70% ; margin-left:8%; margin-right:10%; text-align:justify;">
     <!-- input tag -->
     <div class="pesquisar">
 
@@ -146,11 +146,12 @@ include_once("header.php");
     </div>
     <!-- linking javascript -->
 
-
+<div style="margin-left:10% ;">
 
     <h3>REGIMENTO FATEC</h3>
     <br>
     <button class="btn btn-secondary btn-tam" style="margin-left:35% ;"><a href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/secretaria/regimento-fatecs%202016.pdf"></a>Regimento</button>
+  </div>
   </div>
 
 

@@ -28,9 +28,17 @@
             ?> </header>
 
   <br><br>
-
+  <br>
   <div class="conteudo">
-    <iframe width="1046" height="600" src="https://urhsistemas.cps.sp.gov.br//dgsdad/SelecaoPublica/FATEC/PSS/inscricoesabertas.aspx"></iframe>
+  <h1> Venha Fazer parte da Fatec-ID</h1>
+<br><br>
+
+<h4> Para verificar os editais abertos da unidade de Indaiatuba, digite o código da unidade - 105 - e clique em pesquisar!</h4>
+</div> 
+<br>
+<div class="prof" >
+
+    <iframe width="900" height="500" src="https://urhsistemas.cps.sp.gov.br//dgsdad/SelecaoPublica/FATEC/PSS/inscricoesabertas.aspx"></iframe>
 
   </div>
 
@@ -46,3 +54,4 @@
 </body>
 
 </html>
+
