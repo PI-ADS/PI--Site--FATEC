@@ -1,5 +1,3 @@
-<?php include "../conexao.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,9 +14,10 @@
 
   <header>
     <?php
-    /*
-    session_start(); 
     include("../config/banco.php");
+
+/*
+    session_start(); 
     if(isset($_SESSION["login"]) == 1){   
       include("../headerloged.php");
     }else{  
