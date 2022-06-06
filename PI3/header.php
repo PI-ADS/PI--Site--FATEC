@@ -43,7 +43,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #666666">
         <div class="container-fluid">
             <a href="/PI3/index.php" class="navbar-brand">
-                <img src="/PI3/image/logo.png" height="55" alt="CoolBrand">
+                <img src="/PI3/image/logo.png" height="55" alt="FatecID">
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="navbar-nav ms-auto">
                         <!-- <a class="nav-item nav-link">Bem Vindo - Otavio</a> -->
-                        <a href="login.php" class="nav-item nav-link"><button type="button" class="btn btn-danger">Area do Aluno</button></a>
+                        <a href="/PI3/login.php" class="nav-item nav-link"><button type="button" class="btn btn-danger">Area do Aluno</button></a>
                     </div>
                 </div>
             </div>

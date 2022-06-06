@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once 'config/banco.php';
+include_once '../config/banco.php';
 if (isset($_SESSION["login"]) == 1) {
   include_once '../headerloged.php';
 } else {
@@ -53,7 +53,7 @@ if (isset($_SESSION["login"]) == 1) {
         <span>Modelos de Ensino: <strong>À distância</strong></span>
       </div>
     </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=dl7IGvpSatw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dl7IGvpSatw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="side-right">
       <h2>Informações:</h2>
       <div class="sub-info">
@@ -92,7 +92,7 @@ if (isset($_SESSION["login"]) == 1) {
       <button type="button" id="radius-button">
         <i class="fa-regular fa-calendar-check"></i>
         <br>
-        Cronograma atividades
+        Atividades
       </button>
     </a>
 

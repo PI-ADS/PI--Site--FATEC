@@ -42,8 +42,8 @@
 <div>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #666666">
         <div class="container-fluid">
-            <a href="../index.php" class="navbar-brand">
-                <img src="../image/logo.png" height="55" alt="CoolBrand">
+        <a href="/PI3/index.php" class="navbar-brand">
+                <img src="/PI3/image/logo.png" height="55" alt="FatecID">
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -54,7 +54,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cursos</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="item-de-menu">
                             <a class="dropdown-item" href="#">Presenciais</a>
-                            <a class="dropdown-item" href="#">EAD</a>
+                            <a class="dropdown-item" href="EAD/gestaoEAD.php">EAD</a>
                             <a class="dropdown-item" href="#">Iniciação científica</a>
                             <a class="dropdown-item" href="#">Trabalho de graduação</a>
                             <a class="dropdown-item" href="#">Vestibular</a>
@@ -130,7 +130,7 @@
                     <a class="nav-item nav-link">
                         <?php
 
-                        $sql = "select * from alunos where RA = '" . $_SESSION["RA"] . "'";
+                        $sql = "select * from TB_ALUNOS where RA = '" . $_SESSION["RA"] . "'";
 
                         $query = mysqli_query($conexao, $sql);
 
@@ -139,7 +139,7 @@
                             $_SESSION["RA"] = $sql["RA"];
 
 
-                            echo "<a class='nav-link'> Bem-vindo, " . $sql["Nome_Aluno"] . " <span class='sr-only'>(current)</span></a>";
+                            echo "<a class='nav-link'> Bem-vindo, " . $sql["NOME"] . " <span class='sr-only'>(current)</span></a>";
                         }
                         ?>
                     </a>
@@ -155,7 +155,7 @@
                             <a class="dropdown-item" href="#">Fale com o Michel</a>
                         </div>
                     </div>
-                    <a href="../logout.php" class="nav-item nav-link"><button type="button" class="btn btn-danger">SAIR</button></a>
+                    <a href="/PI3/logout.php" class="nav-item nav-link"><button type="button" class="btn btn-danger">SAIR</button></a>
                 </div>
             </div>
         </div>
