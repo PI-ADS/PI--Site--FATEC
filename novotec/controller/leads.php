@@ -12,24 +12,25 @@
 
     <?php
 
-        require_once "/wamp64/www/novotec/BD/conexao.php";
+    include_once "../BD/conexao.php";
 
-            $NOME= $_POST ["nome"];
-            $EMAIL= $_POST ["email"];
-            $TELEFONE= $_POST ["telefone"];
-            $sql = "INSERT INTO TB_INTERESSADOS (nome,email,telefone)
-            VALUES ('$NOME','$EMAIL','$TELEFONE')";    
-            $stmt = mysqli_prepare($conn,$sql);
+    $NOME = $_POST["nome"];
+    $EMAIL = $_POST["email"];
+    $TELEFONE = $_POST["telefone"];
+    $sql = "INSERT INTO TB_INTERESSADOS (nome,email,telefone)
+            VALUES ('$NOME','$EMAIL','$TELEFONE')";
+    $stmt = mysqli_prepare($conn, $sql);
 
-            if($stmt){
-                mysqli_stmt_execute($stmt);
-                echo '<script>alert("Seus contatos foram salvos!")</script>';
-                // header("location:/novotec/view/mainNovotec.html");
-                
-            } else{
-                echo '<script>alert("Não foi possível salvar seu contato")</script>';
-            }
+    if ($stmt) {
+        mysqli_stmt_execute($stmt);
+        echo '<script>alert("Seus contatos foram salvos!")</script>';
+        // header("location:/novotec/view/mainNovotec.html");
+
+    } else {
+        echo '<script>alert("Não foi possível salvar seu contato")</script>';
+    }
     ?>
 
 </body>
+
 </html>
