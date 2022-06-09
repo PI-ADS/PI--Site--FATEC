@@ -34,7 +34,7 @@ include_once("header.php");
     <h2>Quem Somos</h2>
 
 
-    <img class="img-inst" src="./image/fatecid.jpeg" alt="">
+    <img class="img-inst" src="../image/fatecid.jpeg" alt="">
 
     <p>
       A Faculdade de Tecnologia de Indaiatuba é resultante de intenção
@@ -56,8 +56,24 @@ include_once("header.php");
     </p>
     <br>
     <a id='btn-div' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.6em">\/</a>
+<br><br>
+<div class="container conteudo">
+
+<h3>Conheca parte da nossa historia</h3>
+<br>
+  <div class="row">
+<div class="col-sm">
+  <h4>Historico</h4>
+<img style="width:90%; margin-left:10%;" src="../image/inst.jpg" alt="">
+</div>
+<div class="col-sm">
+<h4>Diretoria</h4>
+<img style="width: 90%; margin-left:10%;" src="../image/inst2.jpeg" alt="">
+</div>
+  </div>
 
 
+</div>
     <br>
     <br>
     <h3>Conheca nossos professores</h3>
