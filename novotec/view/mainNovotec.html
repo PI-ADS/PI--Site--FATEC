@@ -26,7 +26,7 @@
     <header>
         <div id="nav-principal">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                <a href="http://www.fatecid.com.br/site/" class="nav-link">
+                <a href="../../Grupo-GLOR/PI3/index.php" class="nav-link">
                     <img id="home-site" class="img-fluid" width="120" src="img/fatec_logo.jpg.png" alt="logo Fatec-ID">
                 </a>
                 <button class="navbar-toggler btn btnToggle" type="button" data-toggle="collapse"
@@ -50,7 +50,7 @@
                             <a href="#perguntas" class="nav-link">Perguntas Frequentes<span class="line">|</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#scroll4" class="nav-link">Fale Conosco</a>
+                            <a href="../../BancoDeDados/" class="nav-link">Fale Conosco</a>
                         </li>
                     </ul>
                 </div>
@@ -171,6 +171,7 @@
         </div>
     </section>
 
+    <!-- ==================== Sessão com video Novotec ==================== -->
     <section>
         <div class="container" id="intro-video">
             <iframe width="853" height="480" src="https://www.youtube.com/embed/gNmRGCeckRg"
@@ -197,12 +198,12 @@
                     <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://blog.eseg.edu.br/wp-content/uploads/2020/07/post_thumbnail-7c5a905ac2dd76e82dfa0f8286ded456-780x450.jpg"
-                                    class="img-fluid rounded my-auto">
+                                <img src="img/Ajudante de Logística-1.jpg"
+                                    class="img-fluid rounded my-auto" style="min-height: 400px">
                             </div>
                             <div class="carousel-item">
-                                <img src="http://www.portalic.com.br/blog/wp-content/uploads/2019/11/Profissionais-de-log%C3%ADstica-mais-procurados-pelas-empresas-735x518.jpg"
-                                    class="img-fluid rounded my-auto">
+                                <img src="img/Ajudante de Logística-2.jpg"
+                                    class="img-fluid rounded my-auto" style="min-height: 400px">
                             </div>
                         </div>
                         <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
@@ -263,12 +264,12 @@
                     <div id="carousel-indicadores1" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://www.dlojavirtual.com/wp-content/uploads/2019/10/overworked-businesswoman-typing-financial-statistics-laptop-sitting-desk-table-startup-company-office-late-night-1024x576.jpg"
-                                    class="img-fluid rounded my-auto">
+                                <img src="img/Marketing Digital-IMG1.jpg"
+                                    class="img-fluid rounded my-auto" style="min-height: 400px">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://marketingpordados.com/wp-content/uploads/2021/07/Profissional-de-marketing-digital-768x512.jpg"
-                                    class="img-fluid rounded my-auto">
+                                <img src="img/Marketing Digital-IMG2.jpg"
+                                    class="img-fluid rounded my-auto" style="min-height: 400px">
                             </div>
                         </div>
                         <a href="#carousel-indicadores1" class="carousel-control-prev" data-slide="prev">
@@ -288,12 +289,12 @@
                     <div id="carousel-indicadores2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://static.portaldacidade.com/unsafe/https://s3.amazonaws.com/umuarama.portaldacidade.com/img/news/2021-08/casa-do-empreendedor-e-senac-ofertam-curso-de-gestao-de-pequenos-negocios-6126af2eedd16.jpg"
-                                    class="img-fluid rounded my-auto">
+                                <img src="img/Gestão de Pequenos Negócios-IMG1.jpg"
+                                    class="img-fluid rounded my-auto" style="min-height: 400px">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://i3.wp.com/devcoffee.com.br/wp-content/uploads/2020/11/Gestao-Profissional-de-Micro-e-Pequenos-Negocios-1024x561.jpg"
-                                    class="img-fluid rounded my-auto" height="739px">
+                                <img src="img/Gestão de Pequenos Negócios-IMG2.png"
+                                    class="img-fluid rounded my-auto" style="min-height: 400px">
                             </div>
                         </div>
                         <a href="#carousel-indicadores2" class="carousel-control-prev" data-slide="prev">
@@ -326,6 +327,52 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ================== Modal para captura de informações de interessados ================== -->
+    <section>
+        <!-- Botão para acionar modal -->
+        <div class="container">
+            <div class="btn-modal-inscricoes">
+                <button type="button" class="btn btn-danger btn-edit my-auto mx-auto" data-toggle="modal" data-target="#ModalLeads">
+                    <i class="fa-solid fa-envelope-circle-check"></i> Inscreva-se
+                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ModalLeads" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalCentralizado">Ficou Interessado?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="p-modal-body">Deixe seu contato e te notificamos quando e como se inscrever:
+                        </p>
+                        <form enctype="multipart/form-data" method="POST" action="../controller/leads.php">
+                            <input class="p-modal-body" type="text" name="nome" size=30 placeholder="Nome">
+                            <input class="p-modal-body" type="text" name="email" size=30 placeholder="E-mail">
+                            <input class="p-modal-body" type="text" name="telefone" size=20 id="telefone"
+                                placeholder="Telefone / Celular">
+                            <select class="p-modal-body" type="text" name="curso">
+                                <option value="Ajudante de Logística">Ajudante de Logística</option>
+                                <option value="Marketing Digital">Marketing Digital</option>
+                                <option value="Gestão de Pequenos Negócios">Gestão de Pequenos Negócios</option>
+                            </select>
+                            <p class="btn-modal-body">
+                                <button class="my-auto mx-auto btn btn-danger btn-edit" type="submit">Quero me
+                                    inscrever!
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -480,49 +527,7 @@
         </div>
     </section>
 
-
-    <!-- Modal para captura de informações de interessados -->
-    <section>
-        <!-- Botão para acionar modal -->
-        <div class="container">
-            <div class="btn-modal-inscricoes">
-                <button type="button" class="btn btn-danger btn-edit my-auto mx-auto" data-toggle="modal" data-target="#ModalLeads">
-                    <i class="fa-solid fa-envelope-circle-check"></i> Inscreva-se
-                </button>
-            </div>
-        </div>
-
-        <div class="modal fade" id="ModalLeads" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="TituloModalCentralizado">Ficou Interessado?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="p-modal-body">Deixe seu contato e te notificamos quando e como se inscrever:
-                        </p>
-                        <form enctype="multipart/form-data" method="POST" action="../controller/leads.php">
-                            <input class="p-modal-body" type="text" name="nome" size=30 placeholder="Nome">
-                            <input class="p-modal-body" type="text" name="email" size=30 placeholder="E-mail">
-                            <input class="p-modal-body" type="text" name="telefone" size=20 id="telefone"
-                                placeholder="Telefone / Celular">
-                            <p class="btn-modal-body">
-                                <button class="my-auto mx-auto btn btn-danger btn-edit" type="submit">Quero me
-                                    inscrever!
-                            </p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Botão de ir diretamento ao topo -->
+    <!-- ==================== Botão de ir diretamento ao topo ==================== -->
     <section>
         <div>
             <a href="#" class="scrollToTop"><span class="fas fa-angle-up"></span></a>
@@ -630,7 +635,6 @@
 </body>
 
 </html>
-
 
 <!-- ==================== Scripts ==================== -->
 

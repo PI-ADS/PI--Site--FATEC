@@ -17,8 +17,9 @@
     $NOME = $_POST["nome"];
     $EMAIL = $_POST["email"];
     $TELEFONE = $_POST["telefone"];
-    $sql = "INSERT INTO TB_INTERESSADOS (nome,email,telefone)
-            VALUES ('$NOME','$EMAIL','$TELEFONE')";
+    $CURSO = $_POST["curso"];
+    $sql = "INSERT INTO TB_INTERESSADOS (nome,email,telefone,curso)
+            VALUES ('$NOME','$EMAIL','$TELEFONE','$CURSO')";
     $stmt = mysqli_prepare($conn, $sql);
 
     if ($stmt) {

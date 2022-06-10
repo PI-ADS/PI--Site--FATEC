@@ -2,8 +2,17 @@
     box-shadow: inset 0px 0px 4px rgb(0,0,0,1);
 } */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+  }
+
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 5px !important;
 }
 
 body {
@@ -30,8 +39,14 @@ ul, li, .card-body, .btn-perguntas{
 }
 
 @media (max-width: 769px){
-    .btn-perguntas{
+    .btn-perguntas, .card-body{
         font-size: 15px !important;
+    }
+}
+
+@media (max-width: 400px){
+    .btn-perguntas, .card-body{
+        font-size: 10px !important;
     }
 }
 
@@ -219,6 +234,14 @@ ul, li, .card-body, .btn-perguntas{
 
 #carousel-indicadores2, #carousel-indicadores1, #carousel-indicadores{
     margin-bottom: 60px;
+}
+
+@media (max-width: 400px)
+{
+    .carousel-item{
+        max-width: 360px;
+        max-height: 250px;
+    }
 }
 
 .faces{

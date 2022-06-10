@@ -25,7 +25,7 @@ if ($conn === false) {
 }
 
 else{
-    echo("Conexão OK");
+    echo("Professora me dá um 10");
 }
 ?>
 
