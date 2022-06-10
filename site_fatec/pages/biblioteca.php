@@ -55,7 +55,7 @@ include_once("header.php");
     </p>
     <br>
 
-    <a id='btn-div' class="btn btn-outline-secondary lermais-pos" ;>\/</a>
+    <a id='btn-div' class="btn btn-outline-secondary lermais-pos" ;>+</a>
     <br>
 
     <script>

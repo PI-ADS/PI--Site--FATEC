@@ -71,7 +71,7 @@ include_once("header.php");
       </li>
     </ul>
     <br>
-    <a id='btn-div' class="btn btn-outline-secondary lermais-pos2" ; style="font-size:0.6em">\/</a>
+    <a id='btn-div' class="btn btn-outline-secondary lermais-pos2" ; style="font-size:0.6em">+</a>
 
     <br>
     <br>
@@ -97,7 +97,7 @@ include_once("header.php");
       </li>
     </ul>
     <br>
-    <a id='btn-div1' class="btn btn-outline-secondary lermais-pos2" style="font-size:0.6em" ;>\/</a>
+    <a id='btn-div1' class="btn btn-outline-secondary lermais-pos2" style="font-size:0.6em" ;>+</a>
 
 
     <br>

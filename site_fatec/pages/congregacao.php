@@ -136,7 +136,7 @@ include_once("header.php");
 
   </div>
 
-  <a id='btn-div' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em" ;>\/</a>
+  <a id='btn-div' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em" ;>+</a>
 
   <br>
   <br>

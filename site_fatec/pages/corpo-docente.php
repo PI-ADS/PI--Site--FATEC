@@ -140,7 +140,7 @@ include_once("header.php");
   </div>
 
   <br>
-  <a id='btn-div' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em" ;>\/</a>
+  <a id='btn-div' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em" ;>+</a>
 
   <div class=" conteudo">
     <br>
@@ -245,7 +245,7 @@ include_once("header.php");
 
   </div>
   <br>
-  <a id='btn-div1' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em" ;>\/</a>
+  <a id='btn-div1' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em" ;>+</a>
 
 
   <div class=" conteudo">
@@ -350,7 +350,7 @@ include_once("header.php");
 
   </div>
   <br>
-  <a id='btn-div2' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em" ;>\/</a>
+  <a id='btn-div2' class="btn btn-outline-secondary lermais-pos" style="font-size:0.6em" ;>+</a>
   <br>
   <br>
 

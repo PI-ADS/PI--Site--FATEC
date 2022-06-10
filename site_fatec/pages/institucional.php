@@ -55,7 +55,7 @@ include_once("header.php");
       responsabilidade o primeiro.
     </p>
     <br>
-    <a id='btn-div' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.6em">\/</a>
+    <a id='btn-div' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.6em">+</a>
 <br><br>
 <div class="container conteudo">
 
@@ -93,7 +93,7 @@ include_once("header.php");
       e economicamente produtivas.”
     </p>
 
-    <a id='btn-div1' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.4em">\/</a>
+    <a id='btn-div1' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.4em">+</a>
     <br><br>
     <h3>Visão</h3>
 
@@ -104,7 +104,7 @@ include_once("header.php");
       em suas áreas de competência.
     </p>
 
-    <a id='btn-div2' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.4em">\/</a>
+    <a id='btn-div2' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.4em">+</a>
     <br><br>
     <h3>Objetivos</h3>
 
@@ -115,7 +115,7 @@ include_once("header.php");
       sustentável, promovendo ações e oferecendo
     </p>
 
-    <a id='btn-div3' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.4em">\/</a>
+    <a id='btn-div3' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.4em">+</a>
     <br><br>
 
   </div>
@@ -137,7 +137,7 @@ include_once("header.php");
         </div>
 
         <div class="col-sm">
-          <button class="btn btn-secondary btn-tam" style="padding-top:2.2em; padding-right:2em;"><a href="./pdi.html" class="font-btn"> PDI <br></a></button>
+          <button class="btn btn-secondary btn-tam" style="padding-top:2.2em; padding-right:2em;"><a href="./pdi.php" class="font-btn"> PDI <br></a></button>
         </div>
 
 

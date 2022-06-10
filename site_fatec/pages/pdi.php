@@ -20,33 +20,19 @@
         a participação de professores, alunos, funcionários e representantes da
         sociedade civil para identificar as potencialidades, fragilidades,
         oportunidades e ameaças que envolvem a Fatec Indaiatuba e propor ações
-        práticas de melhorias. <span id="more">O principal objetivo desse encontro é refletir
+        práticas de melhorias. 
+      </p>
+        <p class="lermais" style="display: none;">O principal objetivo desse encontro é refletir
         sobre a melhor forma de atender as necessidades da população em termos
         de educação, buscando então estabelecer metas a curto e médio prazo para
         a instituição no que diz respeito à sua filosofia de trabalho, à missão
         a que se propõe, às diretrizes pedagógicas que orientam suas ações, à
         sua estrutura organizacional e às atividades acadêmicas que desenvolve
         e/ou que pretende desenvolver.
-      </p></span>
-      <button class="lermais"   onclick="myFunction()" id="myBtn">Read more</button>
+      </p>
+      <a id='btn-div' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.6em">+</a>
 
-      <script>
-        function myFunction() {
-          var dots = document.getElementById("dots");
-          var moreText = document.getElementById("more");
-          var btnText = document.getElementById("myBtn");
-        
-          if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Read more"; 
-            moreText.style.display = "none";
-          } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Read less"; 
-            moreText.style.display = "inline";
-          }
-        }
-        </script>
+
 
 <div class="container ">
 
@@ -54,56 +40,56 @@
 
       <div class="row">
 <div class="col-sm">
-      <button class="btn-medio">
-        <a
+      <button class="btn btn-secondary btn-tam">
+        <a class="font-btn"
           href="http://www.fatecid.com.br/site/wp-content/uploads/2021/06/PLANO-DE-GESTAO-TEMPLATE-2021_2025.pdf"
-          >Plano Diretor (2021-2025)</a
+          >Plano Diretor <br>(2021-2025)</a
         >
       </button>
 
       </div>
 
       <div class="col-sm">
-      <button class="btn-pequeno">
-        <a href="http://www.fatecid.com.br/site/index.php/pdi-2018-2019/"
-          >PDI 2018-2019</a
+      <button class="btn btn-secondary btn-tam">
+        <a  class="font-btn" href="http://www.fatecid.com.br/site/index.php/pdi-2018-2019/"
+          >PDI <br> 2018-2019</a
         >
       </button>
 </div>
 
      <div class="col-sm">
-        <button class="btn-pequeno">
-        <a href="http://www.fatecid.com.br/site/index.php/pdi/"
-          >PDI 2016-2018</a
+        <button class="btn btn-secondary btn-tam">
+        <a class="font-btn" href="http://www.fatecid.com.br/site/index.php/pdi/"
+          >PDI <br> 2016-2018</a
         >
       </button>
-
+<br><br>
     </div>
 
     <div class="col-sm">
-      <button class="btn-pequeno">
-        <a
+      <button class="btn btn-secondary btn-tam">
+        <a class="font-btn"
           href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/pdi/PDI%20TEMPLATE%202019-2023%20PRONTO.pdf"
-          >Relatório Diretor</a
+          >Relatório <br>Diretor</a
         >
       </button>
 
       </div>
 
       <div class="col-sm">  
-      <button class="btn-grande">
-        <a
+      <button class="btn btn-secondary btn-tam">
+        <a class="font-btn"
           href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/pdi/Resultado%20das%20Metas%20do%20PDI%202018_2019.xlsx"
-          >Resultado das Metas - PDI - 2018/2019</a
+          >Resultado das Metas <br> PDI - 2018/2019</a
         >
       </button>
 
     </div>
 
     <div class="col-sm">
-      <button class="btn-grande btn-1">
-        <a href="http://www.fatecid.com.br/site/index.php/regulamento_cpa/"
-          >CPA - Comissão Própria de Avaliacão</a
+      <button class="btn btn-secondary btn-tam">
+        <a class="font-btn" href="http://www.fatecid.com.br/site/index.php/regulamento_cpa/"
+          >CPA - Comissão <br>Própria de Avaliacão</a
         >
       </button>
     </div>
@@ -144,3 +130,15 @@
     </div>
   </body>
 </html>
+<script>
+  var btn = document.getElementById('btn-div');
+  var lermais = document.querySelector('.lermais');
+  btn.addEventListener('click', function() {
+
+    if (lermais.style.display === 'block') {
+      lermais.style.display = 'none';
+    } else {
+      lermais.style.display = 'block';
+    }
+  });
+</script>

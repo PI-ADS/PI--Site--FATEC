@@ -80,7 +80,7 @@ include_once("header.php");
       <br>
     </div>
 
-    <a id='btn-div' style="font-size:0.6em" class="btn btn-outline-secondary lermais-pos" ;>\/</a>
+    <a id='btn-div' style="font-size:0.6em" class="btn btn-outline-secondary lermais-pos" ;>+</a>
     <br><br>
   </div>
 
@@ -106,7 +106,7 @@ include_once("header.php");
     </div>
 
 
-    <a id='btn-div1' style="font-size:0.6em" class="btn btn-outline-secondary lermais-pos" ;>\/</a>
+    <a id='btn-div1' style="font-size:0.6em" class="btn btn-outline-secondary lermais-pos" ;>+</a>
     <br><br>
 
     <div class="container conteudo">
