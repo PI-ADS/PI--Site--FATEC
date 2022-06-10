@@ -29,7 +29,7 @@
         <img src="..\image\room.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <p class="card-text">Normas dos Laboratórios</p>
-            <a href="#" class="btn btn-primary">Acessar</a>
+            <a href="normas.phps" class="btn btn-primary">Acessar</a>
         </div>
     </div>
     <div class="card" style="width: 31.33%;
@@ -44,7 +44,7 @@
         <img src="..\image\documentos.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <p class="card-text">Documentos Relacionados</p>
-            <a href="#" class="btn btn-primary">Acessar</a>
+            <a href="http://www.fatecid.com.br/site/wp-content/uploads/downloads/info/check_in.pdf" class="btn btn-primary">Acessar</a>
         </div>
     </div>
     <div class="card" style="width: 31.33%;

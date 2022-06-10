@@ -102,7 +102,7 @@ include_once("header.php");
 
         <div class="col-sm">
           <button class="btn btn-secondary btn-tam">
-            <a href="./tg-ptg.html" class="font-btn">Trabalhos de Graduacao</a>
+            <a href="./tg-ptg.php" class="font-btn">Trabalhos de Graduacao</a>
           </button>
         </div>
       </div>

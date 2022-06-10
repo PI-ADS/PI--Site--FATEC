@@ -111,7 +111,7 @@ include_once("header.php");
 
         <div class="col-sm">
           <button class="btn btn-secondary btn-tam">
-            <a href="./vagas.html" class="font-btn">Vagas</a>
+            <a href="./vagas.php" class="font-btn">Vagas</a>
 
           </button>
         </div>

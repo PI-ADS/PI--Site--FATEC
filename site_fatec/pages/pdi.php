@@ -1,5 +1,16 @@
 <!-- @format -->
+<?php
+/*
+    session_start(); 
+    include("../config/banco.php");
+    if(isset($_SESSION["login"]) == 1){   
+      include("../headerloged.php");
+    }else{  
+      include("../header.php");
+    }*/
 
+include_once("header.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,6 +24,7 @@
   </head>
   <body>
     <div class="conteudo">
+      <br>
       <h1>PDI</h1>
 
       <p>
@@ -32,12 +44,12 @@
       </p>
       <a id='btn-div' class="btn btn-outline-secondary lermais-pos" ; style="font-size:0.6em">+</a>
 
-
+<br><br>
 
 <div class="container ">
 
       <h3>Consulte aqui outras Informacões</h3>
-
+<br>
       <div class="row">
 <div class="col-sm">
       <button class="btn btn-secondary btn-tam">
@@ -95,7 +107,7 @@
     </div>
   </div>
 </div>
-
+<br><br>
 
     <div class="container">
       <h4 class="h4">Conheca alguns vídeos sobre nossa instituicão</h4>
@@ -128,8 +140,16 @@
     </div>
 
     </div>
+    <footer>
+
+<?php
+include("../footer.php");
+?>
+</footer>
   </body>
+
 </html>
+
 <script>
   var btn = document.getElementById('btn-div');
   var lermais = document.querySelector('.lermais');
