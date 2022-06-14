@@ -49,22 +49,22 @@
                             }
                             else
                             {
-                                $sql = "select * from TB_ALUNOS";
+                                $sql = "select * from tb_alunos";
                                 
                                 $query = mysqli_query($conexao, $sql);
                             
                                 while($sql = mysqli_fetch_array($query))
                                 {
-                                    if($sql["RA"] == $login && $sql["SENHA"] == $senha)
+                                    if($sql["ra"] == $login && $sql["senha"] == $senha)
                                     {          
-                                        $_SESSION["RA"] = $sql["RA"];                         
+                                        $_SESSION["RA"] = $sql["ra"];                         
                                         $_SESSION["login"] = 1;
                                             
                                         echo '<font face=verdana size=3 color=red><center>
                                         <img src="assets/carregando.gif"></font></center>
                                         <META HTTP-EQUIV="refresh" CONTENT="2; URL=verificalogin.php">';
                                     }
-                                    if($sql["RA"] == $login && $sql["SENHA"] != $senha )
+                                    if($sql["ra"] == $login && $sql["senha"] != $senha )
                                     {
                                         $msg = "Usuário ou senha incorretos! Tente Novamente!";
                                         echo $msg;

@@ -42,7 +42,7 @@
 <div>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #666666">
         <div class="container-fluid">
-            <a href="Home/index.php" class="navbar-brand">
+            <a href="../Home/index.php" class="navbar-brand">
                 <img src="../assets/logo.png" height="55" alt="FatecID">
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -53,7 +53,7 @@
                     <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cursos</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="item-de-menu">
-                                <a class="dropdown-item" href="Curso">Presenciais</a>
+                                <a class="dropdown-item" href="../Curso/index.php">Presenciais</a>
                                 <a class="dropdown-item" href="EAD/gestaoEAD.php">EAD</a>
                                 <a class="dropdown-item" href="#">Iniciação científica</a>
                                 <a class="dropdown-item" href="#">Trabalho de graduação</a>

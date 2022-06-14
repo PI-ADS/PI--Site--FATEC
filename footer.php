@@ -35,7 +35,6 @@
 	  .carousel-item{
     min-height: 280px;}
 	
-	
     </style>
 </head>
 <!-- Barra Superior -->

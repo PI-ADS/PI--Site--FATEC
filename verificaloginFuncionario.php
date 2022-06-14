@@ -36,8 +36,8 @@
                         @$loginFunc = $_POST["txtcpf"]; 
                         @$senha = $_POST["txtsenha"];    
                         
-                        $_SESSION["cpf"] = $loginFunc;  
-                        $_SESSION["senha"] = $senha;
+                        $_SESSION["CPF"] = $loginFunc;  
+                        $_SESSION["SENHA"] = $senha;
 
 /*-------------------------------------------Botão Logar -------------------------------------*/            
                         if(isset($_POST["btLogar"]))
@@ -49,22 +49,22 @@
                             }
                             else
                             {
-                                $sql = "select * from TB_FUNCIONARIOS";
+                                $sql = "select * from tb_funcionarios";
                             
                                 $query = mysqli_query($conexao, $sql);
                             
                                 while($sql = mysqli_fetch_array($query))
                                 {
-                                    if($sql["CPF"] == $loginFunc && $sql["SENHA"] == $senha)
+                                    if($sql["cpf"] == $loginFunc && $sql["senha"] == $senha)
                                     {   
-                                        $_SESSION["cpf"] = $sql["CPF"];
+                                        $_SESSION["CPF"] = $sql["cpf"];
                                         $_SESSION["loginFunc"] = 1;
                                         
                                         echo '<font face=verdana size=3 color=red><center>
                                         <img src="assets/carregando.gif"></font></center>
                                         <META HTTP-EQUIV="refresh" CONTENT="2; URL=verificaloginFuncionario.php">';
                                     }
-                                    if($sql["CPF"] == $loginFunc && $sql["SENHA"] != $senha )
+                                    if($sql["cpf"] == $loginFunc && $sql["senha"] != $senha )
                                     {
                                         $msg = "Usuário ou senha incorretos! Tente Novamente!";      
                                         echo $msg;

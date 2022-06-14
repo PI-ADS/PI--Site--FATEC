@@ -39,10 +39,10 @@
                     <form id="login" method="post" action="verificalogin.php">
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                              <input id="RA" name="txtra" placeholder="RA" class="form-control" type="text">
+                              <input id="ra" name="txtra" placeholder="RA" class="form-control" type="text">
                             </div>
                             <div class="form-group col-md-12">
-                              <input type="password" class="form-control" name="txtsenha" id="senha" placeholder="Senha">
+                              <input id="senha" name="txtsenha" placeholder="Senha" class="form-control" type="password">
                             </div>
                           </div>
                          <div class="form-row">
@@ -84,8 +84,8 @@
                 $query = mysqli_query($conexao, $sql);
             
                 while($sql = mysqli_fetch_array($query)){
-                    if($sql["RA"] == $login && $sql["SENHA"] == $senha){
-                        $_SESSION["RA"] = $sql["RA"];
+                    if($sql["ra"] == $login && $sql["senha"] == $senha){
+                        $_SESSION["RA"] = $sql["ra"];
                         
                         echo '<font face=verdana size=3 color=red><center> <br><br>
                          <img src="img/loading.gif"></font></center>

@@ -36,9 +36,10 @@
                                 echo "Preencha todos os campos obrigatórios do cadastro!";
                                 echo '<META HTTP-EQUIV="refresh" CONTENT="2; URL=cadastroFuncionarioFuncionario.php">';
                             }
+
                             else
                             {
-                                $sql = "INSERT INTO tb_funcionarios (CPF, NOME, EMAIL, SENHA) 
+                                $sql = "INSERT INTO TB_FUNCIONARIOS (CPF, NOME, EMAIL, SENHA) 
                                         VALUES ('$cpf', '$nome', '$email', '$senha')";
 
                                 $stmt = mysqli_prepare($conexao,$sql);

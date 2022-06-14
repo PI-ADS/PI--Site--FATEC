@@ -16,19 +16,19 @@
   input{
       border-radius: 10px;
   }
-  .footer{
-    width: 100vw;
-    background-color: #8c0c0c;
-    display: flex; 
-    align-items: center;
-    justify-content: space-around;
-    bottom: 0;
-    position: fixed;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-}
+    .footer {
+        width: 100vw;
+        background-color: #555555;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+        position: fixed;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
 
 .footer div a{
     font-weight: 700;
@@ -54,20 +54,20 @@
   input{
       border-radius: 10px;
   }
-  .footer{
-    width: 100vw;
-    height: 25vh;
-    background-color: #8c0c0c;
-    display: flex; 
-    align-items: center;
-    justify-content: space-around;
-    bottom: 0;
-    position: fixed;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-}
+    .footer {
+        width: 100vw;
+        height: 25vh;
+        background-color: #555555;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+        position: fixed;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
 
 .footer div a{
     font-weight: 700;
@@ -93,20 +93,20 @@
   input{
       border-radius: 10px;
   }
-  .footer{
-    width: 100vw;
-    height: 10vh;
-    background-color: #8c0c0c;
-    display: flex; 
-    align-items: center;
-    justify-content: space-around;
-    bottom: 0;
-    position: fixed;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-}
+    .footer {
+        width: 100vw;
+        height: 10vh;
+        background-color: #555555;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+        position: fixed;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
 
 .footer div a{
     font-weight: 700;
@@ -148,27 +148,27 @@
 
 
   img{
-      margin-top: 50px;
-      height: 500px;
+      margin-top: 10px;
+      height: 50px;
   }
 
 
 
 
-  .footer{
-    width: 100vw;
-    height: 10vh;
-    background-color: #8c0c0c;
-    display: flex; 
-    align-items: center;
-    justify-content: space-around;
-    bottom: 0;
-    position: fixed;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-}
+    .footer {
+        width: 100vw;
+        height: 10vh;
+        background-color: #555555;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+        position: fixed;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
 
 .footer div a{
     font-weight: 700;
@@ -219,30 +219,23 @@
 
 
   img{
-      margin-top: 50px;
-      height: 500px;
+      margin-top: 10px;
+      height: 50px;
   }
 
-
-
-
-
-
-
-
-  .footer{
-      width: 100vw;
-      height: 10vh;
-      background-color: #8c0c0c;
-      display: flex; 
-      align-items: center;
-      justify-content: space-around;
-      bottom: 0 !important;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 700;
-      font-family: "Roboto", sans-serif;
-  }
+    .footer {
+        width: 100vw;
+        height: 10vh;
+        background-color: #555555;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0 !important;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
 
   .footer div a{
       font-weight: 700;
