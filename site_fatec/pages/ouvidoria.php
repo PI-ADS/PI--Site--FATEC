@@ -30,25 +30,50 @@ include_once("header.php");
     <br>
 
     <div class="row">
-      <form class="col">
+      <form class="col" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <div class="form-group">
           <label for="exampleFormControlInput1">Nome Completo</label>
-          <input class="form-control" type="text">
+          <input class="form-control" nome="name" id="name" type="text">
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="email" class="form-control" nome="email" id="email" placeholder="name@example.com">
         </div>
 
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Mensagem</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" name="enviar" class="btn btn-primary">Enviar</button>
       </form>
     </div>
   </div>
+  <?php
+  //Criando Variaveis//
+  if (isset($_POST['enviar'])) {
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+    $email = $_POST['email'];
+    $destino = $_POST['destino'];
+    $mensagem = "Nome do Contato: " . $nome;
+    $mensagem = "Mensagem: " . $message;
+
+    $headers =  'MIME-Version: 1.0' . "\r\n"; 
+    $headers .= 'From: Alice Alves <'. $email . '>' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+    //Definir o servidor de e-mail
+    ini_set('SMTP', 'email-smtp.us-east-1.amazonaws.com');
+    ini_set('smtp_port', '2587');
+    ini_set('smtp_user', 'ses-smtp-user.20220614-205614,AKIAVS4CWPK4KFFCB46M,BMphtCO1fJagn6Fil/IVOB1Im5ctDQVazSeQTbj7YJp7');
+    
+    ini_set('From', $email);
+    
+    
+    mail($destino, "Ouvidoria", $mensagem, $headers);
+  }
+  ?>
   <br>
   <footer>
 
