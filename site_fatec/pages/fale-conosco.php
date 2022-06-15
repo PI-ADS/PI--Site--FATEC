@@ -78,7 +78,9 @@
     $message = $_POST['message'];
     $destino = $_POST['destino'];
     // $mensagem .= "<p>O usuário: " . $name . ", enviou uma mensagem. <br>";
-    $mensagem = "Mensagem: " . $message . "</p>";
+    $mensagem = "Nome do Contato: " . $nome;
+    $mensagem = "E-mail do Contato: " . $email;
+    $mensagem = "Mensagem: " . $message;
 
     $headers =  'MIME-Version: 1.0' . "\r\n"; 
     $headers .= 'From: Alice Alves <allytori01@gmail.com>' . "\r\n";
@@ -92,7 +94,7 @@
     ini_set('From', 'allytori01@gmail.com');
     
     
-    mail($email, "Email de fale conosco", $mensagem, $headers);
+    mail($destino, "Email de fale conosco", $mensagem, $headers);
   }
   ?>
   <br>
