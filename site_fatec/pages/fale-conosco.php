@@ -73,20 +73,25 @@
   <?php
   //Criando Variaveis//
   if (isset($_POST['enviar'])) {
-    $name = $_POST['name'];
+    // $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
     $destino = $_POST['destino'];
-    $mensagem .= "<p>O usuário: " . $name . ", enviou uma mensagem. <br>";
-    $mensagem .= "Mensagem: " . $message . "</p>";
+    // $mensagem .= "<p>O usuário: " . $name . ", enviou uma mensagem. <br>";
+    $mensagem = "Mensagem: " . $message . "</p>";
 
-    $headers = "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+    $headers =  'MIME-Version: 1.0' . "\r\n"; 
+    $headers .= 'From: Alice Alves <allytori01@gmail.com>' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
     //Definir o servidor de e-mail
-    // ini_set('SMTP', 'h16.servidorhh.com');
-    // ini_set('smtp_port', '465');
-    // ini_set($destino);
+    ini_set('SMTP', 'email-smtp.us-east-1.amazonaws.com');
+    ini_set('smtp_port', '2587');
+    ini_set('smtp_user', 'ses-smtp-user.20220614-205614,AKIAVS4CWPK4KFFCB46M,BMphtCO1fJagn6Fil/IVOB1Im5ctDQVazSeQTbj7YJp7');
+    
+    ini_set('From', 'allytori01@gmail.com');
+    
+    
     mail($email, "Email de fale conosco", $mensagem, $headers);
   }
   ?>
