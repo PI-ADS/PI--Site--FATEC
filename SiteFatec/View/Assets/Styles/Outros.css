@@ -1,0 +1,399 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+/***************geral****************/
+
+*{
+    font-family: 'Roboto';
+}
+
+.h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+    
+
+}
+
+h2 {
+
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+}
+
+h3 {
+
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+
+}
+
+h4 {
+
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+
+
+}
+
+.h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+h6 {
+    text-align: center;
+}
+
+p {
+
+text-align: justify;
+
+}
+a {
+    font-size: 1em;
+    text-decoration: none;
+}
+
+button a {
+    font-size: 1.5em;
+    text-decoration: none;
+    
+}
+a:link {
+    color: Black
+}
+
+a:visited{
+    color: black;
+}
+
+
+button {
+    padding: 1em;
+    background-color: lightgrey;
+    color: BLACK;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 0.5em;
+     
+}
+
+button:hover {
+    padding:1.5 ;
+}
+
+
+
+.conteudo {
+    
+    
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 10%;
+
+}
+
+conteudo-prof {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.conteudo2 {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+ul {
+    
+    list-style-type: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.tit-prof {
+    display: inline;
+    width: 15%;
+}
+
+
+/***************botoes****************/
+
+.btn-div {
+
+    color: #343a40;
+    background-color: transparent;
+    background-image: none;
+    border-color: #343a40;
+
+}
+
+.lermais {
+    background: white; width: 100%;
+}
+
+.btn-tam {
+  
+
+    width: 15em;
+
+}
+
+.font-btn {
+    
+    font-size: 1.2em;
+}
+
+.font-btn:hover {
+    color: white
+}
+
+.center {
+    padding-top:2em; padding-right:2em; justify-content: center; margin-left:50%; margin-right:30%Ï;
+}
+
+
+/***************biblioteca****************/
+
+.biblioteca {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: -10;
+}
+
+.btn-biblio {
+    margin-left: 8%;
+}
+
+.lermais-pos {
+
+    margin-left:48% ;
+    margin-right:  45% ;
+
+}
+
+.lermais-pos2 {
+
+    margin-left:43% ;
+   
+
+}
+
+.tit {
+    text-align: left;
+    margin-left: none;
+}
+
+.lates {
+    margin-left: 3em;
+}
+
+
+/*************LER MAIS****************/
+
+#more {display: none;}
+
+
+
+/***************institucional****************/
+
+.img-inst {
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+
+
+
+.border-destaque {
+    border-bottom: 4px solid rgb(154, 18, 18);
+    
+}
+
+/***************PDI****************/
+
+
+
+.video-pdi {
+    display: inline;
+    float: left;
+    padding: 2em;
+    margin-left: 2%;
+    border-radius: 3px;
+}
+
+/***************portaria****************/
+
+.pesquisar {
+    margin-bottom: 4em;
+    font-weight: bold;
+    
+}
+
+input {
+    height: 4em;
+}
+
+.div-pesquisar {
+    width: 70%;
+    margin-left: 10%;
+
+}
+
+.link-portaria {
+    font-weight: bold;
+
+}
+
+.ul-lista {
+    width: 80%;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.ul-lista li {
+    margin-bottom: 2em;
+}
+
+
+/***************congregacao****************/
+
+.atas {
+
+    margin-left: 38%;
+    margin-right: 40%;
+
+}
+
+/***************congregacao****************/ 
+.faq {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    
+}
+
+/***************tg-ptg****************/ 
+
+.bold {
+    font-weight: bold;
+}
+
+
+.video-tg {
+    margin-left: 20%;
+}
+
+
+/*TESTE*/
+
+
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.animals{
+  display: list-item;    
+ } 
+
+
+ #searchbar{
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      width: 30%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+   /* When the input field gets focus,
+        change its width to 100% */
+   input[type=text]:focus {
+     width: 70%;
+   }
+ 
+  #list{
+    font-size:  1.5em;
+    margin-left: 90px;
+   }
+ 
+.animals{
+   display: list-item;    
+  } 
+
+
+  .pesquisar {
+      margin-left: 10%;
+  }
+
+
+.gp-btn {
+    margin-left: 50%;
+}
+
+
+.prof {
+    width:60%; 
+    margin-left: 15%; 
+    margin-right:10%; 
+   
+}

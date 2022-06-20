@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/858e8845a9.js" crossorigin="anonymous"></script>
+    <!-- Favicon Fatec-ID -->
+    <link rel="icon"
+        href="http://www.fatecid.com.br/site/wp-content/uploads/2018/01/cropped-cropped-fav-icon-32x32.png">
+    <!-- CSS principal Novotec -->
+    <link rel="stylesheet" href="../Assets/Styles/mainNovotec.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title>Novotec Expresso Fatec-ID</title>
+</head>
+
+<body>
+    <!-- ==================== Barra de navegação Novotec ==================== -->
+    <header>
+        <div id="nav-principal">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+                <a href="../../../../../SiteFatec/index.php" class="nav-link">
+                    <img id="home-site" class="img-fluid" width="120" src="../img/fatec_logo.jpg.png"
+                        alt="logo Fatec-ID">
+                </a>
+                <button class="navbar-toggler btn btnToggle" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars iconToggle"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="#cursos" class="nav-link">Cursos<span class="line">|</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="https://www.novotec.sp.gov.br/Curso/Modalidade/NovotecExpresso" class="nav-link"
+                                target="_blank">Inscrições<span class="line">|</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#depoimentos" class="nav-link">Depoimentos<span class="line">|</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#perguntas" class="nav-link">Perguntas Frequentes<span class="line">|</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../../../SiteFatec/Control/Fale_Conosco/fale-conosco.php" class="nav-link">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== Sessão de Introdução ao Novotec ==================== -->
+    <section>
+
+        <section>
+            <div class="container">
+                <a href="https://www.cps.sp.gov.br/app-seu-futuro-novotec-orienta-estudantes-sobre-carreiras-em-tic/"
+                    target="_blank"><img src="../img/appNovotec.png" class="img-fluid imgf1"></a>
+            </div>
+        </section>
+
+        <!-- ==================== Modais de apresentação Novotec ==================== -->
+
+        <div class="modal" tabindex="-1" role="dialog" id="sobre">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sobre Novotec</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>O programa Novotec chegou trazendo opções de cursos técnicos e profissionalizantes
+                                gratuitas aos estudantes do ensino médio das escolas estaduais paulistas.
+                            </li>
+                            <li>
+                                Oferecidos por instituições de referência, como as ETECs e FATECs do Centro Paula Souza,
+                                os cursos têm conteúdo conectado com demandas do mundo do trabalho e da vida fora da
+                                escola.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="why">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Por que fazer Novotec?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Aprenda uma profissão sem prejudicar seus estudos.</li>
+                            <li>Desenvolva responsabilidades e habilidades profissionais.</li>
+                            <li>Fique mais próximo de uma oportunidade de trabalho.</li>
+                            <li>Estude tranquilo com uma <b><a id="bolsa"
+                                        href="../Assets/Files/Informe Bolsa Auxílio_Novotec Expresso no contraturno 2022.01.pdf"
+                                        target="_blank">bolsa-auxílio.</a></b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="nvexpress">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Novotec Expresso</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                O programa Novotec Expresso leva formação profissional à juventude, conectando com o
+                                currículo do ensino médio.
+                            </li>
+                            <li>
+                                São cursos de qualificação profissional, com certificação garantida e com duração de 120
+                                horas realizadas em um semestre.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="about">
+                        <button type="button" class="btn btn-danger btn-edit" data-toggle="modal" data-target="#sobre">
+                            Sobre o Novotec
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="about">
+                        <button type="button" class="btn btn-danger btn-edit" data-toggle="modal" data-target="#why">
+                            Por que fazer Novotec
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="about">
+                        <button type="button" class="btn btn-danger btn-edit" data-toggle="modal"
+                            data-target="#nvexpress">
+                            Novotec Expresso
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Sessão com video Novotec ==================== -->
+    <section>
+        <div class="container" id="intro-video">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/gNmRGCeckRg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <!-- <div class="container">
+            <img src="img/reuniao_alunos.jpg" class="img-fluid imgf1">
+        </div> -->
+    </section>
+
+    <!-- ==================== Sessão de Apresentação dos Cursos ==================== -->
+    <section class="caixa" id="cursos">
+        <div class="container">
+            <div class="separador-conteudo d-flex">
+                <h1 class="my-auto mx-auto">Nossos Cursos</h1>
+            </div>
+
+            <!-- ==================== Curso #1 ==================== -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 d-flex">
+                    <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/Ajudante de Logística-1.jpg" class="img-fluid rounded my-auto"
+                                    style="min-height: 400px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/Ajudante de Logística-2.jpg" class="img-fluid rounded my-auto"
+                                    style="min-height: 400px">
+                            </div>
+                        </div>
+                        <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+                            <i class="fas fa-angle-double-left fa-3x"></i>
+                        </a>
+                        <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                            <i class="fas fa-angle-double-right fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <ul class="tCursos"><b class="title-cursos">Ajudante de Logística</b>
+                        <li>
+                            <b>Objetivos:</b> Atuar nos Processos de Suprimentos de materiais e organizar os processos
+                            de armazenagem de materiais
+                        </li>
+                        <li>
+                            <b>Competências:</b> Organizar a solicitação de compras, separar materiais para expedição,
+                            auxiliar na estruturação da carga (embalagem e documentação), realizar a guarda de materiais
+                            (estocagem) e levantar necessidade de materiais, levantar dados de materiais para realização
+                            do inventário e realizar separação de materiais.
+                        </li>
+                        <li>
+                            <b>Mercado de trabalho:</b> LeroyMerlin, DHL, Pão de Açúcar, iFood, Ambev, etc.
+                        </li>
+                        <button class="btn btn-danger btn-edit"><a
+                                href="https://www.novotec.sp.gov.br/Curso/Detalhes/AjudanteLogisticaExp21"
+                                target="_blank">Saiba Mais</a></button>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-1" style="background-color: #B20000;"></div>
+
+            <!-- ==================== Curso #2 ==================== -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 d-flex">
+                    <ul class="tCursos"><b class="title-cursos">Marketing Digital</b>
+                        <li>
+                            <b>Objetivos:</b> Identificar o padrão comportamental do consumidor em ambiente digital,
+                            além de utilizar ferramentas para monitoramento e gestão de conteúdo em mídias sociais.
+                        </li>
+                        <li>
+                            <b>Competências:</b> Identificar plataformas de divulgação de produtos e serviços como
+                            ferramentas de marketing digital. Planejar campanhas de marketing e engajamento do
+                            consumidor em mídias sociais. Desenvolver conteúdo para mídias sociais com base nos
+                            conceitos da cultura de compartilhamento.
+                        </li>
+                        <li>
+                            <b>Mercado de trabalho:</b> Departamento de Marketing de qualquer setor, Comércios, ONGs,
+                            agências de comunicação e publicidade.
+                        </li>
+                        <button class="btn btn-danger btn-edit"><a
+                                href="https://www.novotec.sp.gov.br/Curso/Detalhes/MktDigitalVendasExp21"
+                                target="_blank">Saiba Mais</a></button>
+                    </ul>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div id="carousel-indicadores1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/Marketing Digital-IMG1.jpg" class="img-fluid rounded my-auto"
+                                    style="min-height: 400px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/Marketing Digital-IMG2.jpg" class="img-fluid rounded my-auto"
+                                    style="min-height: 400px">
+                            </div>
+                        </div>
+                        <a href="#carousel-indicadores1" class="carousel-control-prev" data-slide="prev">
+                            <i class="fas fa-angle-double-left fa-3x"></i>
+                        </a>
+                        <a href="#carousel-indicadores1" class="carousel-control-next" data-slide="next">
+                            <i class="fas fa-angle-double-right fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-1" style="background-color: #B20000;"></div>
+
+            <!-- ==================== Curso #3 ==================== -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 d-flex">
+                    <div id="carousel-indicadores2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/Gestão de Pequenos Negócios-IMG1.jpg" class="img-fluid rounded my-auto"
+                                    style="min-height: 400px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/Gestão de Pequenos Negócios-IMG2.png" class="img-fluid rounded my-auto"
+                                    style="min-height: 400px">
+                            </div>
+                        </div>
+                        <a href="#carousel-indicadores2" class="carousel-control-prev" data-slide="prev">
+                            <i class="fas fa-angle-double-left fa-3x"></i>
+                        </a>
+                        <a href="#carousel-indicadores2" class="carousel-control-next" data-slide="next">
+                            <i class="fas fa-angle-double-right fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <ul class="tCursos"><b class="title-cursos">Gestão de Pequenos Negócios</b>
+                        <li>
+                            <b>Objetivos:</b> Prospectar clientes, controlar as finanças do empreendimento, desenvolver
+                            fornecedores, estruturar equipe de trabalho e identificar oportunidades de negócios.
+                        </li>
+                        <li>
+                            <b>Competências:</b> Elaborar planilhas de fluxos financeiros, acompanhar e avaliar
+                            desempenho dos colaboradores, promover a capacitação da equipe de trabalho, realizar
+                            recrutamento e seleção de pessoal, elaborar demonstrativo de resultado do período, entre
+                            outros.
+                        </li>
+                        <li>
+                            <b>Mercado de trabalho:</b> Negócio próprio, start-ups, pequenos e médios empreendimentos
+                            inovadores.
+                        </li>
+                        <button class="btn btn-danger btn-edit"><a
+                                href="https://www.novotec.sp.gov.br/Curso/Detalhes/GestaoPPNegociosExp21"
+                                target="_blank">Saiba Mais</a></button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== Modal para captura de informações de interessados ================== -->
+    <section>
+        <!-- Botão para acionar modal -->
+        <div class="container">
+            <div class="btn-modal-inscricoes">
+                <button type="button" class="btn btn-danger btn-edit my-auto mx-auto" data-toggle="modal"
+                    data-target="#ModalLeads">
+                    <i class="fa-solid fa-envelope-circle-check"></i> Inscreva-se
+                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ModalLeads" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalCentralizado">Ficou Interessado?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="p-modal-body">Deixe seu contato e te notificamos quando e como se inscrever:
+                        </p>
+                        <form enctype="multipart/form-data" method="POST" action="../../Model/leads.php">
+                            <input class="p-modal-body" type="text" name="nome" size=30 placeholder="Nome">
+                            <input class="p-modal-body" type="text" name="email" size=30 placeholder="E-mail">
+                            <input class="p-modal-body" type="text" name="telefone" size=20 id="telefone"
+                                placeholder="Telefone / Celular">
+                            <select class="p-modal-body" type="text" name="curso">
+                                <option value="Ajudante de Logística">Ajudante de Logística</option>
+                                <option value="Marketing Digital">Marketing Digital</option>
+                                <option value="Gestão de Pequenos Negócios">Gestão de Pequenos Negócios</option>
+                            </select>
+                            <p class="btn-modal-body">
+                                <button class="my-auto mx-auto btn btn-danger btn-edit" type="submit">Quero me
+                                    inscrever!
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ==================== Sessão de depoimentos ==================== -->
+    <section class="caixa" id="depoimentos">
+        <div class="container">
+            <div class="separador-conteudo d-flex">
+                <h1 class="my-auto mx-auto">Depoimentos</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-start divColumn">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-face-grin-wide faces" font-size="100px"></i>
+                            <div class="quadro">
+                                <p class="text-quadro">Estudante: <b>Isabela</b><br>
+                                    Curso: <b>Marketing Digital</b><br>
+                                    "Está agregando muito na minha vida. Uma oportunidade de enxergar o mundo
+                                    diferente."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-face-laugh-squint faces" font-size="100px"></i>
+                            <div class="quadro">
+                                <p class="text-quadro">Estudante: <b>Guilherme Bezerra</b><br>
+                                    Curso: <b>Marketing Digital</b><br>
+                                    "Experiências boas e que agregam muito. Conhecendo novas áreas e me divertindo. É
+                                    bem legal vir pra FATEC."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-face-laugh faces" font-size="100px"></i>
+                            <div class="quadro">
+                                <p class="text-quadro">Estudante: <b>Luigi Martins</b><br>
+                                    Curso: <b>Marketing Digital</b><br>
+                                    "Gostei bastante de entrar no curso, pois abriu novas experiências para minha vida.
+                                    A curiosidade sempre move a gente, e com o curso fez eu querer saber ainda mais
+                                    sobre tecnologia e principalmente por Marketing."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-start divColumn">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-face-laugh-squint faces" font-size="100px"></i>
+                            <div class="quadro">
+                                <p class="text-quadro">Estudante: <b>Daniel Marques de Freitas</b><br>
+                                    Curso: <b>Ajudante de Logística</b><br>
+                                    "É muito bom. Estou aprendendo muita coisa e os professores explicam muito bem. A
+                                    logística eu achava que ia ser chata de começo, mas é incrível. Estou gostando
+                                    demais."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-face-grin-wide faces" font-size="100px"></i>
+                            <div class="quadro">
+                                <p class="text-quadro">Estudante: <b>Aléxia Souza</b><br>
+                                    Curso: <b>Ajudante de Logística</b><br>
+                                    "Abrange muito conhecimento, algo que existe no nosso cotidiano. Um curso que abre muitas oportunidades de emprego."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-face-laugh faces" font-size="100px"></i>
+                            <div class="quadro">
+                                <p class="text-quadro">Estudante: <b>Victor Augusto</b><br>
+                                    Curso: <b>Ajudante de Logística</b><br>
+                                    "Gostei muito do curso. Espero aprender bastante, pegar o meu diploma e agregar no
+                                    currículo."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Sessão de Perguntas Frequentes ==================== -->
+    <section id="perguntas">
+        <div class="container">
+            <div class="separador-conteudo d-flex">
+                <h1 class="my-auto mx-auto">Perguntas Frequentes</h1>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-perguntas" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <b>Posso cursar somente aos sábados?</b>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Não, são 9 horas semanais. Então na Fatec Indaiatuba não temos oferta de cursos aos
+                            sábados.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed btn-perguntas" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <b>As aulas são de segunda à sexta-feira? Todos os dias da semana?</b>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            São 3 dias na semana e 2 horas e meia por dia. Cada curso tem sua programação específica.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed btn-perguntas" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <b>Posso fazer mais de um curso?</b>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Por semestre é possível fazer somente um curso, pois as aulas acontecem em 3 dias na semana.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed btn-perguntas" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <b>Existem cursos no horário noturno para essa modalidade do Novotec?</b>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Na Fatec Indaiatuba os cursos do Novotec são no período da tarde.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Botão de ir diretamento ao topo ==================== -->
+    <section>
+        <div>
+            <a href="#" class="scrollToTop"><span class="fas fa-angle-up"></span></a>
+        </div>
+    </section>
+
+    <!-- ==================== Rodapé padrão ==================== -->
+    <footer>
+        <style type="text/css">
+            titulo {
+                color: #555555;
+                font-family: 'Dosis', sans-serif;
+                font-size: 15px;
+                line-height: 28.8px;
+                vertical-align: baseline;
+                letter-spacing: normal;
+                word-spacing: 0px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            p {
+                color: #555555;
+                font-family: 'Dosis', sans-serif;
+                font-size: 15px;
+                line-height: 28.8px;
+                vertical-align: baseline;
+                letter-spacing: normal;
+                word-spacing: 0px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .carousel-item {
+                min-height: 280px;
+            }
+        </style>
+
+        <!-- Barra Superior -->
+        <div class="p-1" style="background-color: #B20000;"></div>
+        <!-- Barra Superior -->
+
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <div class="row">
+                <div class="col-lg-5 text-left mr-5">
+                    <titulo><b>FACULDADE DE TECNOLOGIA DE INDAIATUBA</b></titulo>
+                    <br>
+                    <p><i class="fa fa-house mr-2"></i>Rua Dom Pedro I, 65 - Cidade Nova I | CEP 13334-100</p>
+                    <p><i class="fa fa-phone mr-2"></i>(19) 3885-1923 | (19) 99269-1700</p>
+                </div>
+
+                <div class="col-sm"></div>
+
+                <div class="col-md-3 ml-5 text-right">
+                    <!-- Section: Social media -->
+                    <section class="mb-2">
+
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-lg btn-floating m-1" style="background-color: #3b5998;"
+                            href="https://www.facebook.com/fatecdeindaiatuba/" target="_blank"><i
+                                class="fab fa-fw fa-facebook-f"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-lg btn-floating m-1" style="background-color: #ac2bac;"
+                            href="https://www.instagram.com/fatecindaiatuba/" role="button" target="_blank"><i
+                                class="fab fa-fw fa-instagram"></i></a>
+
+                        <!-- Youtube -->
+                        <a class="btn btn-outline-light btn-lg btn-floating m-1" style="background-color: #d42b14;"
+                            href="https://www.youtube.com/channel/UChZP4dkp2IFvLslxm3i_Qdw" role="button"
+                            target="_blank"><i class="fab fa-fw fa-youtube"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-outline-light btn-lg btn-floating m-1" style="background-color: #0082ca;"
+                            href="https://www.linkedin.com/school/fatec-indaiatuba/" role="button" target="_blank"><i
+                                class="fab fa-fw fa-linkedin-in"></i></a>
+
+                        <!-- WhatsApp -->
+                        <a class="btn btn-outline-light btn-lg btn-floating m-1" style="background-color: #07af69;"
+                            href="https://api.whatsapp.com/send?phone=5519992691700" role="button" target="_blank"><i
+                                class="fab fa-fw fa-whatsapp"></i></a>
+
+                        <!-- Telegram -->
+                        <a class="btn btn-outline-light btn-lg btn-floating m-1" style="background-color: #658fdd;"
+                            href="https://t.me/joinchat/PQvKKEnsqVR4fxrdYbuAVg" role="button" target="_blank"><i
+                                class="fab fa-fw fa-telegram"></i></a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+            </div>
+
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #686868;">
+            © Copyright 4° Semestre de ADS
+            <br>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
+
+<!-- ==================== Scripts ==================== -->
+
+<!-- JavaScript (Funcionamento do carrossel) -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
+
+    var swiper1 = new Swiper(".mySwiper1", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+        },
+    });
+</script>
+
+<!-- Modal para captura do contato de interessados -->
+<script>
+    function iniciaModal(modalID) {
+        if (localStorage.fechaModal !== modalID) {
+            const modal = document.querySelector('#ModalLeads');
+            modal.classList.add('mostrar');
+            localStorage.fechaModal = modalID;
+        }
+    }
+
+    contato.addEventListener('scroll', () => {
+        if (window.pageYOffset > 400) {
+            iniciaModal('modalID')
+        }
+    })
+</script>
+
+<!-- Ordem para funcionamento dos Swipers -->
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script type="text/JavaScript" src="../../Model/jquery/jquery.mask.js"></script>
+<script type="text/JavaScript" src="../../Model/jquery/jquery.mask.min.js"></script>
+
+<script>
+    // Função da mascara do telefone
+    $(document).ready(function () {
+        //telefone
+        $("#telefone").mask("(00)00000-0000");
+    });
+</script>
