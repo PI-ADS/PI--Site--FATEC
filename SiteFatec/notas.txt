@@ -1,16 +1,3 @@
-- O Footer tá conflitando com o Header
-Ele não tá deixando usar o dropdown quando eu incluo o footer
-
 - Esqueci a senha não funciona...
 
-- O que vai ter dentro do dropdown da area do aluno? Só o nome dos professores mesmo?
-
-- Iniciação cientifica?
-
-- Página de abertura de chamados está com CSS fora do padrão
-
-- print de erros verificaLogin
-
-- Servidor de e-mail?
-
-- 
+- Servidor de e-mail
