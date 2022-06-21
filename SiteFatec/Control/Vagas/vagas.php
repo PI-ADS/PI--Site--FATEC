@@ -1,22 +1,17 @@
-<!DOCTYPE html>
 <?php
 
-session_start();
-include("../../BD/conexao.php");
-if (isset($_SESSION["login"]) == 1) {
-    include("../../View/Header_Footer/headerloged.php");
-} else {
-    include("../../View/Header_Footer/header.php");
-}
+    session_start();
+    include("../../BD/conexao.php");
+    if (isset($_SESSION["login"]) == 1) {
+        include("../../View/Header_Footer/headerloged.php");
+    } else {
+        include("../../View/Header_Footer/header.php");
+    }
 
-$sql_code = "SELECT v.RazaoSocial, v.DESCRICAO, v.REQUISITO, v.observacoes
-        FROM fatecid.TB_VAGAS v where NOW() between v.dt_abertura and v.DT_FECHAMENTO";
-$sql_query = $conn->query($sql_code) or die($conn->error);
-if ($sql_query == false) {
-    echo "<script>Alert('error')</script>";
-    exit;
-}
-
+    $sql_code = "SELECT v.RazaoSocial, v.DESCRICAO, v.REQUISITO, v.observacoes
+                   FROM fatecid.TB_VAGAS v where NOW() between v.dt_abertura and v.DT_FECHAMENTO";
+    $sql_query = $conn->query($sql_code) or die($conn->error);
+    
 ?>
 
 <head>
